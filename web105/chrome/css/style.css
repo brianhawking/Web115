@@ -1,0 +1,55 @@
+body {
+    background: black;
+    color: ivory;
+    font-size: large;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px solid orangered;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    font-family: serif;
+    color: #94ba50;
+}
+
+img {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    padding: 15px;
+    background-color: #94ba50
+}
+
+nav {
+    text-align: center;
+    color: #94ba50;
+}
+
+nav a {
+    text-decoration: none;
+    color: #94ba50;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: upper-roman;
+    color:#94ba50;
+}
+
+dt {
+    color: #94ba50;
+}
+
+dd {
+    color: yellow;
+}

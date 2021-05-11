@@ -1,0 +1,42 @@
+/* Set colors for the page */
+body{
+    background-color: #F0E7DB;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* create styles for the h1 tag */
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* create styles for the h2 tag */
+h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+/* create styles for the h3 tag */
+h3 {
+    font-size: larger;
+    text-align: center;
+}
+
+/* create styles for the p tag */
+p {
+    /* don't need to change paragraphs. I like it the way it is */
+    margin: 0px auto;
+    width:75%
+}
+
+img{
+    width: 40%;
+    display: block;
+    margin: 10px auto; 
+    /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
+}
+
+q {
+    color: #5C5C78
+}

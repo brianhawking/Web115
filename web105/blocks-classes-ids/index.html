@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks, Classes, and IDs</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        function changeHeader() {
+            document.getElementById("myHeader").innerHTML = "THIS IS THE NEW HEADER"
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+
+            <h1 class="title" id="myHeader">This a header</h1>
+            <button onclick="changeHeader()">Change Header</button>
+
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#code">Code Snippet</a>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <section>
+                <h2>What you will find on this page</h2>
+                <ul>
+                    <li>Block Elements
+                        <ul>
+                            <li>Header</li>
+                            <li>nav</li>
+                            <li>main</li>
+                            <li>Lists</li>
+                            <li>figure</li>
+                            <li>figcaption</li>
+                            <li>blockquote</li>
+                            <li>p</li>
+                            <li>form</li>
+                            <li>h1, h2</li>
+                            <li>pre</li>
+                        </ul>
+                    </li>
+                    <li>Inline Elements
+                        <ul>
+                            <li>a (the navigation buttons)</li>
+                            <li><b>b (bold)</b></li>
+                            <li>code</li>
+                            <li>small</li>
+                            <li>img</li>
+                            <li>label</li>
+                            <li>em</li>
+                            <li>input</li>
+                        </ul>
+                    </li>
+
+                    <li>Classes
+                        <ul>
+                            <li>.smallContainer</li>
+                            <li>.largeContainer</li>
+                            <li>.subtitle</li>
+                        </ul>
+                    </li>
+
+                    <li>IDs
+                        <ul>
+                            <li>#contact (style the form)</li>
+                            <li>#code (bookmark to code snippet) </li>
+                            <li>#myHeader (button at top will change the header's text)</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="smallContainer">
+
+                <div class="subtitle">
+                    <h2>This is a section</h2>
+                </div>
+            </section>
+
+
+            <section class="smallContainer">
+
+                <div class="subtitle">
+                    <h2>This is another section</h2>
+                </div>
+            </section>
+
+            <ul>
+                <li>This is a list element</li>
+                <li>This is another element</li>
+                <li>My last list element</li>
+            </ul>
+
+            <figure>
+                <img src="images/tree-bg.jpg" alt="Picture of tree">
+                <figcaption>Fig. 1 - Picture of a tree (Block element)</figcaption>
+            </figure>
+
+            <p>Here is a block quote with inline em.</p>
+            <blockquote>
+                <em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, officia, maiores facere hic fugiat
+                    sit eligendi, ex deleniti qui laudantium harum voluptatem iste sed eos nobis optio accusamus
+                    sapiente vel.Quibusdam dolorem dolorum vel tempora cum impedit ipsa blanditiis voluptatum sequi non.
+                    Nulla ducimus magni natus illum sint dolorem eligendi! Aliquid necessitatibus voluptatibus, alias
+                    quae blanditiis suscipit excepturi delectus facilis!</em>
+            </blockquote>
+            <p>End of blockquote</p>
+
+            <p><small> This is using inline small. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    suscipit dolor amet adipisci sit. Officiis labore harum necessitatibus consectetur eius laudantium
+                    velit minus ex dolorum cum? Sint unde animi saepe!</small></p>
+
+        </main>
+
+
+        <div class="subtitle">
+            <br>
+        </div>
+
+        <form id="contact" action="">
+            <label for="Form">This is a form</label>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+
+        <div class="subtitle">
+            <br>
+        </div>
+
+        <pre>
+            Code: 
+        <code id="code" style="width: 50%;"></code>
+            func displayCode(text: String) {
+                if (text != "") {
+                    print("Hello \(text)")
+                }
+                else {
+                    print("You don't exist.")
+                }
+            }
+        </code>
+        </pre>
+
+
+        <footer>
+            <p>This is a footer (block element)</p>
+        </footer>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

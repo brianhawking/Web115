@@ -1,0 +1,545 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ======================= Variables ============================ */
+
+:root {
+    --background-light: #e7e3d4;
+    --background-dark: #b23850;
+    --text-dark: #19181a;
+    --text-light: rgb(252, 233, 213);
+    --accent: #3b8beb;
+    --nav-background: #ffffff;
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Lora', 'Archivo Black', sans-serif;
+    --ff-h1: 'Archivo Black', sans-serif;
+
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ======================= Layout ================================ */
+
+body {
+    background: var(--background-dark);
+    font-family: var(--ff-primary);
+    font-size: larger;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 44%;
+    float: left;
+    text-align: center;
+    border: 2px solid var(--background-dark);
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.container-title {
+    margin: 0px auto;
+    width: 90%;
+    max-width: 900px;
+    overflow: auto;
+}
+
+
+.container-light {
+    background-color: var(--background-light);
+    color: black;
+}
+
+.container-dark {
+    background-color: var(--background-dark);
+    color: white;
+}
+
+.smallContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+header,
+footer {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    color: #F3F3F4;
+    background-color: var(--nav-background);
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 17px 5px 17px 5px;
+    border: 3px solid white;
+}
+
+.navigation a:hover,
+.navigation .active {
+    border: 3px solid #b23850;
+    text-decoration: none;
+}
+
+aside {
+    clear: both;
+    float: right;
+    width: 35%;
+    padding: 10px;
+    border: 2px solid var(--background-dark);
+    background-color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    display: block;
+}
+
+.title-image {
+    text-align: right;
+    width: 50%;
+}
+
+.title-image img {
+    width: 70%;
+    margin: 0px;
+}
+
+.title-text {
+
+}
+
+.bitmoji {
+    float: right;
+    width: 78%;
+    text-align: center;
+}
+
+/* ========================= Styling ==================== */
+
+h1 {
+    padding: 5px;
+    margin: 10px;
+    font-size: 50px;
+}
+
+h2 {
+    padding: 5px;
+    margin: 0px;
+    font-size: 24px;
+}
+
+
+aside h2 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: var(--accent);
+    font-family: var(--ff-secondary);
+    color: white;
+}
+
+aside img {
+    width: 80%;
+}
+
+aside p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+aside p:hover {
+    white-space: normal;
+}
+
+
+.card h2 {
+    text-align: center;
+    background-color: var(--accent);
+    color: white;
+    font-family: var(--ff-secondary);
+    text-shadow: 2px 0px black;
+}
+
+.card img {
+    width: 80%;
+    box-shadow: 5px 5px 5px var(--accent);
+}
+
+.card .boxless {
+    box-shadow: 0px 0px;
+}
+
+
+.card p {
+    margin: 0px;
+}
+
+.card p:hover {
+    white-space: normal;
+}
+
+
+
+/* text */
+p {
+    margin: 10px 0px;
+}
+
+footer p {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ol,
+ul {
+    list-style: circle;
+    margin: 5px 50px;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    width: 40%;
+    margin: 20px;
+    max-width: 400px;
+}
+
+.img-border {
+    padding: 5px;
+    background-color: var(--background-dark);
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 30px;
+    color: white;
+    font-family: var(--ff-h1);
+    text-align: left;
+    background-color: var(--background-dark);
+    background: rgb(178, 56, 80);
+    background: linear-gradient(90deg, rgba(178, 56, 80, 1) 50%, rgba(231, 227, 212, 1) 100%);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.title {
+    color: white;
+    text-align: left;
+    font-family: var(--ff-h1);
+    font-size: 80px;
+    display: block;
+    text-shadow: -2px 1px black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+.boxes {
+    width: 95%;
+    padding: 10px;
+    margin: 2%;
+    border: 1px solid black;
+}
+
+.boxes img {
+    width: 90%;
+    display: block;
+    padding: 2px;
+    margin: 0px auto;
+}
+
+/* === HTML Forms === */
+
+
+/* ======= FORMS ========= */
+
+.form {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.form h3 {
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+input[type=text],
+input[type=email],
+select {
+    width: 90%;
+    padding: 10px 10px;
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid var(--accent);
+}
+
+input[type=submit] {
+    width: 90%;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+    background-color: var(--accent);
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.form input:focus {
+    background-color: var(--accent);
+    color: white;
+}
+
+
+.form textarea {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: var(--ff-primary);
+    font-size: 18px;
+    border: 1px solid var(--accent);
+}
+
+/* === HTML MEDIA === */
+
+.sounds audio {
+    width: 80%;
+}
+
+.local-video video {
+    width: 80%;s
+}
+
+.youtube iframe {
+    display: inline-block;
+    max-width: 80%;
+}
+
+/* === MEDIA QUERIES === */
+
+@media (min-width: 769px) {
+    .boxes {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .boxes {
+        width: 30%;
+        float: left;
+        margin: 1.5%;
+    }
+}
+
+
+
+
+/* trying to do media queries on my main header */
+
+@media (max-width: 768px) {
+    .title-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .title-image {
+        width: 80%;
+        text-align: center;
+
+    }
+
+    .title-text {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+}

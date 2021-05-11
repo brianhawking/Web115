@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Demo W3 Css</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 
+        1. Navigation Row
+            - three cells by percentage 20, 60, 20
+            - middle cell is nested with a row 
+            - nested row uses quarter cells
+        2. Header bar
+            - quarter, half, quarter
+        3. Main with aside
+            - threequarter, quarter
+        4. Card next to text
+            - third, twothird
+        5. Three cards in a row
+            - third, third, third
+        6. Nested containers
+            - first cell is 150px, second cell is the rest
+            - in first cell there are two half cells
+            - in the second cell there are two half cells
+        7. I tried to make one of the layouts from the responsive page. 
+            - three cells each third, third, third
+            - middle cell is nested
+                - one full
+                - half half
+                - third third third
+
+    -->
+
+    <header class="w3-container w3-white">
+        <!-- navigation -->
+        <nav>
+            <div class="w3-cell-row">
+                <div class="w3-container w3-col w3-blue" style="width: 15%;">
+                        <p>&nbsp;</p>
+                </div>
+
+                <div class="w3-center w3-display-container w3-col" style="width: 70%;">
+
+                    <div class="w3-padding w3-quarter"><a href="" class="active">Page 1</a></div>
+                    <div class="w3-padding w3-quarter"><a href="">Page 2</a></div>
+                    <div class="w3-padding w3-quarter"><a href="">Page 3</a></div>
+                    <div class="w3-padding w3-quarter"><a href="">Page 4</a></div>
+
+                </div>
+
+                <div class="w3-container w3-col w3-blue" style="width: 15%;">
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="w3-container w3-cell-row w3-dark-gray">
+            <div class="w3-quarter">
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="w3-half w3-center">
+                <h1>Responsive Layout</h1>
+            </div>
+
+            <div class="w3-quarter">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+    <main class="w3-light-gray">
+
+
+        <div class="w3-cell-row">
+
+
+            <div class="w3-container w3-threequarter w3-light-gray w3-cell">
+                <h2>Main</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit similique consequuntur deleniti. Hic
+                    aperiam recusandae, tempora provident vitae quibusdam voluptatibus fugit delectus quia distinctio
+                    minus cum magnam dolor ratione ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+                    laborum animi quidem aperiam, dolorum
+                    dicta omnis ipsam magnam quos excepturi cupiditate molestiae consectetur facere veritatis tempora
+                    molestias? Eius, corporis eaque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laborum animi quidem aperiam, dolorum
+                    dicta omnis ipsam magnam quos excepturi cupiditate molestiae consectetur facere veritatis tempora
+                    molestias? Eius, corporis eaque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laborum animi quidem aperiam, dolorum
+                    dicta omnis ipsam magnam quos excepturi cupiditate molestiae consectetur facere veritatis tempora
+                    molestias? Eius, corporis eaque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laborum animi quidem aperiam, dolorum
+                    dicta omnis ipsam magnam quos excepturi cupiditate molestiae consectetur facere veritatis tempora
+                    molestias? Eius, corporis eaque?</p>
+
+            </div>
+
+            <aside class="w3-container w3-quarter w3-khaki w3-cell">
+                <h2>Aside</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit debitis eum accusantium veniam esse
+                    incidunt dignissimos magnam provident eveniet fugiat quo porro cumque, quod praesentium aliquid
+                    repellendus, ipsa quibusdam consequuntur?</p>
+            </aside>
+
+        </div>
+
+        <hr>
+
+        <div class="w3-container w3-cell-row">
+
+            <div class="w3-card w3-third">
+                <header class="w3-container w3-blue">
+                    <h1>Header</h1>
+                </header>
+
+                <div class="w3-container w3-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ipsa, minima id et tempore
+                        eveniet. Enim repudiandae sequi perspiciatis nisi porro nemo aliquid numquam suscipit officiis.
+                        Animi suscipit ipsa cum!</p>
+                </div>
+
+                <footer class="w3-container w3-blue">
+                    <h5>Footer</h5>
+                </footer>
+            </div>
+
+            <div class="w3-container w3-twothird">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam est cumque accusantium tempore dolore
+                    neque, odio minus excepturi. Velit accusantium ab natus odit, perferendis deleniti aperiam dolore
+                    est quidem. Qui.
+                    Impedit voluptas quaerat natus dolor porro neque nam nobis repellat inventore fuga possimus nesciunt
+                    dolorem, expedita similique obcaecati dolore reiciendis animi ad a, tenetur odit sequi! Corrupti
+                    numquam inventore vel?
+                    Magni assumenda, facilis, ratione minima fugiat placeat veritatis iure aperiam similique aliquam
+                    nihil, obcaecati enim nulla delectus quisquam aspernatur ad numquam repellat id deserunt omnis
+                    soluta! Dicta aut sunt quam.
+                    Quaerat necessitatibus minus nostrum fugit accusantium omnis aliquid sed doloribus perferendis eum,
+                    rerum distinctio eveniet accusamus illo repellat suscipit quis illum repellendus voluptate enim
+                    nobis quasi eaque. Animi, aliquid nihil.</p>
+
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="w3-margin-top w3-container w3-cell-row">
+
+            <div class="w3-container w3-third">
+                <div class="w3-margin w3-card-4 w3-center w3-cell w3-dark-gray w3-round-xlarge">
+                    <img src="../images/IMG_3242.png" style="width:90%;" alt=" Bitmoji of Brian Veitch">
+                    <div class="w3-container w3-center w3-white w3-border-black w3-border-top">
+                        <p>This is a bitmoji of Brian Veitch!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container w3-third">
+                <div class="w3-margin w3-card-4 w3-center w3-cell w3-dark-gray w3-round-xlarge">
+                    <img src="../images/IMG_3242.png" style="width:90%;" alt=" Bitmoji of Brian Veitch">
+                    <div class="w3-container w3-center w3-white w3-border-black w3-border-top">
+                        <p>This is a bitmoji of Brian Veitch!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container w3-third">
+                <div class="w3-margin w3-card-4 w3-center w3-cell w3-dark-gray w3-round-xlarge">
+                    <img src="../images/IMG_3242.png" style="width:90%;" alt=" Bitmoji of Brian Veitch">
+                    <div class="w3-container w3-center w3-white w3-border-black w3-border-top">
+                        <p>This is a bitmoji of Brian Veitch!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="w3-row w3-light-gray w3-margin-top">
+            <div class="w3-col w3-container" style="width: 300px;">
+                <h2>300px</h2>
+                <div class="w3-row">
+                    <div class="w3-half w3-container w3-blue">
+                        <h2>This is half of the 300px</h2>
+                        <p>This is a paragraph.</p>
+                    </div>
+                    <div class="w3-half w3-container w3-red">
+                        <h2>This is other half</h2>
+                        <p>This is a paragraph.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-rest w3-container">
+                <h2>This is the rest </h2>
+                <div class="w3-row">
+                    <div class="w3-half w3-container w3-red">
+                        <h2>Half</h2>
+                        <p>This is a paragraph.</p>
+                    </div>
+                    <div class="w3-half w3-container">
+                        <h2>Half again</h2>
+                        <p>This is a paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-cell-row w3-margin-top w3-margin-bottom">
+
+            <div class="w3-container w3-cell w3-orange" style="width:17%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat atque ab quaerat sed enim ullam
+                    quae dolor, facilis id at modi reprehenderit ipsa, dolorum illum nihil. Provident quas
+                    exercitationem ratione?</p>
+            </div>
+
+            <div class="w3-container w3-cell" style="width:66%;">
+
+                <div class="w3-container w3-blue">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestiae tempore
+                        repellendus ipsam tempora laudantium quasi voluptatem vitae beatae excepturi earum labore, enim
+                        nesciunt. Possimus est odit accusantium officiis maiores.</p>
+                </div>
+
+                <div class="w3-container w3-half w3-gray">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad molestias labore distinctio
+                        veritatis laboriosam earum ipsa error obcaecati. Reiciendis vero blanditiis nulla enim ab modi
+                        veniam minima deserunt non.</p>
+                </div>
+
+                <div class="w3-container w3-half w3-light-gray">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad molestias labore distinctio
+                        veritatis laboriosam earum ipsa error obcaecati. Reiciendis vero blanditiis nulla enim ab modi
+                        veniam minima deserunt non.</p>
+                </div>
+
+                <div class="w3-container w3-third w3-amber">
+                    <p>hi</p>
+                </div>
+                <div class="w3-container w3-third w3-pale-red">
+                    <p>there</p>
+                </div>
+                <div class="w3-container w3-third w3-blue">
+                    <p>!</p>
+                </div>
+
+
+            </div>
+
+            <div class="w3-container w3-cell w3-orange" style="width:17%;">
+                <p>&nbsp;</p>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer class="w3-cell-row w3-dark-gray">
+        <div class="w3-row-padding w3-center">
+            <p>&copy; Brian Veitch</p>
+        </div>
+    </footer>
+</body>
+
+</html>

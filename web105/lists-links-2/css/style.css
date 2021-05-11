@@ -1,0 +1,50 @@
+body {
+    background: rgb(53, 0, 139);
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    padding: 10px;
+    border: 2px solid gold; 
+    margin: 10px auto;
+    background: ivory;
+    color: rgb(80, 75, 75);
+}
+
+ul {
+    list-style-type:square;
+    list-style-position: outside;
+}
+
+ul ul {
+    list-style-type:circle;
+    list-style-position: inside;
+}
+
+ul li {    
+    padding: 3px 0px;
+}
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol li {
+    padding: 3px 0px;
+}
+
+dt {
+    font-weight: bolder;
+    color:rgb(53, 0, 139);
+}
+
+dd {
+    color:rgb(80, 75, 75);
+    padding: 10px 0px;
+}
