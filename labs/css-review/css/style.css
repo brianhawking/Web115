@@ -1,0 +1,335 @@
+/* -----------------------------------------------------------------------------
+PAGE SETUP
+----------------------------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: gray;
+  }
+  
+  section {
+    padding: 75px 50px;
+  }
+  
+  .container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+  }
+  
+  .panel {
+    padding: 1rem;
+    background: #fff;
+    margin-top: 1rem;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  TYPOGRAPHY
+  ----------------------------------------------------------------------------- */
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 2.4rem;
+  }
+  
+  code {
+    background-color: #eaeaea;
+    padding: 0 5px;
+    border-radius: 2px;
+    border: 1px solid #d8d8d8;
+  }
+  
+  :first-child {
+    margin-top: 0;
+  }
+  
+  :last-child {
+    margin-bottom: 0;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  SECTION COLORS
+  ----------------------------------------------------------------------------- */
+  
+  section:nth-of-type(1) {
+    background-color: #ffda79;
+  }
+  
+  section:nth-of-type(2) {
+    background-color: #ffb142;
+  }
+  
+  section:nth-of-type(3) {
+    background-color: #ff793f;
+  }
+  
+  section:nth-of-type(4) {
+    background-color: #ff5252;
+  }
+  
+  section:nth-of-type(5) {
+    background-color: #a34d6d;
+  }
+  
+  section:nth-of-type(6) {
+    background-color: #474787;
+  }
+  
+  section:nth-of-type(7) {
+    background-color: #3e7ab4;
+  }
+  
+  section:nth-of-type(8) {
+    background-color: #34ace0;
+  }
+  
+  section:nth-of-type(9) {
+    background-color: #34c3c9;
+  }
+  
+  section:nth-of-type(10) {
+    background-color: #33d9b2;
+  }
+  
+  section:nth-of-type(11) {
+    background-color: #99da96;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  CORNERS
+  ----------------------------------------------------------------------------- */
+  
+  .corners .br-all {
+    /* TODO: Apply a 15px border radius on all 4 corners */
+    border-radius: 15px;
+  }
+  
+  .corners .br-top-right {
+    /* TODO: Apply a 30px border radius on the top-right corner */
+    border-top-right-radius: 30px;
+  }
+  
+  .corners .br-bottom {
+    /* TODO: Apply a 10px border radius on the bottom 2 corners */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  OVERFLOW
+  ----------------------------------------------------------------------------- */
+  
+  .overflow .panel {
+    height: 15rem;
+    overflow:hidden;
+    /* TODO: Have the section scroll on the Y axis */
+    overflow-y: scroll;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  FONT AWESOME
+  ----------------------------------------------------------------------------- */
+  
+  .fontawesome .fa-heart {
+    color: tomato;
+  }
+  
+  .fontawesome .favorite-icons {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+
+.fontawesome .fa-youtube {
+  color: #FF0001;
+}
+
+.fontawesome .fa-facebook-square {
+  color: #1877F2;
+}
+
+.fontawesome .fa-paw {
+  color: brown;
+}
+
+.fontawesome .fa-cog {
+  color: black;
+}
+
+.fontawesome .fa-envelope {
+  color: gray;
+}
+
+.fontawesome .fa-phone {
+  color: purple;
+}
+  
+  /* -----------------------------------------------------------------------------
+  RESIZE
+  ----------------------------------------------------------------------------- */
+  
+  .resize .panel {
+    width: 400px;
+    overflow: auto;
+    /* TODO: Add a resize property */
+    resize: horizontal;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  SHADOWS
+  ----------------------------------------------------------------------------- */
+  
+  .shadows .panel {
+    /* TODO: Add a box-shadow to the white box */
+    box-shadow: 5px 5px 20px black;
+  }
+  
+  .shadows h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    /* TODO: Add a text-shadow; for extra fanciness, add multiple text shadows */
+    text-shadow: 0px 3px 3px gray, 
+               2px 4px 3px blue;
+}
+  
+  /* -----------------------------------------------------------------------------
+  Z-INDEX
+  ----------------------------------------------------------------------------- */
+  
+  .z-index .card-container {
+    /* I added this extra container so I didn't have to calculate the positions
+    relative to the panel and account for the padding applied to all panels */
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .z-index .card {
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.33);
+    font-weight: bold;
+    font-size: 6rem;
+    /* Special alignment properties for another upcoming lab */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .z-index .card-1 {
+    background-color: #3e7ab4;
+    top: 0;
+    left: 0;
+    /* TODO: Move this box to the front! */
+    z-index: 3;
+  }
+  
+  .z-index .card-2 {
+    background-color: #33d9b2;
+    top: 27.5%;
+    left: 27.5%;
+    /* TODO: Move this box to the middle! */
+    z-index: 2;
+  }
+  
+  .z-index .card-3 {
+    background-color: #ffda79;
+    top: 55%;
+    left: 55%;
+    /* TODO: Move this box to the back! */
+    z-index: 1;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  Google Fonts
+  ----------------------------------------------------------------------------- */
+  
+  .google-fonts .serif {
+    /* TODO: Make this a Google Font of the right classification! */
+    font-family: 'Bree Serif', serif; 
+}
+  
+  .google-fonts .sans-serif {
+    /* TODO: Make this a Google Font of the right classification! */
+    font-family: 'Acme', sans-serif;
+  }
+  
+  .google-fonts .handwriting {
+    /* TODO: Make this a Google Font of the right classification! */
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  /* -----------------------------------------------------------------------------
+  CSS Variables
+  ----------------------------------------------------------------------------- */
+  
+  .css-variables .illustration {
+    max-width: 90%;
+    margin: 2rem auto;
+    display: block;
+    /* TODO: Assign variables here! */
+    --color1: blue;
+    --color2: red;
+    --color3: yellow;
+    --color4: purple;
+    --color5: black;
+  }
+  
+  .css-variables .prism-1 {
+    /* TODO: Color this with a variable */
+    fill: var(--color1);
+  }
+  
+  .css-variables .prism-2 {
+    /* TODO: Color this with a variable */
+    fill: var(--color2);
+  }
+  
+  .css-variables .prism-3 {
+    /* TODO: Color this with a variable */
+    fill: var(--color3);
+  }
+  
+  .css-variables .prism-4 {
+    /* TODO: Color this with a variable */
+    fill: var(--color4);
+  }
+  
+  .css-variables .outline {
+    /* TODO: Color this with a variable */
+    fill: var(--color5);
+  }
+  
+  /* -----------------------------------------------------------------------------
+  GRADIENTS
+  ----------------------------------------------------------------------------- */
+  
+  .gradients .progress-bar {
+    background-color: #eee;
+    border-radius: 30px;
+    display: flex;
+    margin: 2rem auto;
+    max-width: 80%;
+    overflow: hidden; /* Without this, the completed bar becomes blocky on the left end*/
+  }
+  
+  .gradients .progress-completed {
+    width: 80%;
+    padding: 0.5em;
+    text-align: right;
+    font-weight: bold;
+    color: #fff;
+    background-color: #222;
+    /* TODO: Add a horizontal color gradient here with at least 3 colors */
+    background: linear-gradient(90deg, rgba(226,206,149,1) 0%, rgba(121,134,82,1) 45%, rgba(255,0,243,1) 88%);
+}
+
+
+
+
+
+
