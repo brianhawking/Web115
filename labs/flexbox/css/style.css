@@ -1,0 +1,91 @@
+:root {
+  --background-color: #fffbdf;
+  --text-color: black;
+  --header-text-color: white;
+  --header-background-color: #334443;
+  --button-text-color: white;
+  --button-background-color: #34656d;
+  --card-background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  text-align: center;
+  background-color: var(--header-background-color);
+  padding: 0px;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  color: var(--header-text-color);
+}
+
+.main-container {
+  margin-top: 6em;
+  display: flex;
+}
+main {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+aside {
+  width: 25%;
+}
+
+.card {
+  margin: 10px;
+  border: 1px solid black;
+  width: 250px;
+  box-shadow: 1px 1px 5px gray;
+  flex-grow: 1;
+  background-color: var(--card-background-color);
+}
+
+.card:hover {
+  box-shadow: 3px 3px 10px black;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .text-container {
+  padding: 10px;
+  text-align: center;
+  height: auto;
+}
+
+.card h3, p {
+  margin: 5px;
+  padding: 0px;
+}
+
+.button {
+  display: block;
+  margin: 10px auto;
+  text-decoration: none;
+  color: initial;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: .5em;
+  box-shadow: 1px 1px 1px gray;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+}
+
+.button:hover {
+  box-shadow: 1px 1px 5px black;
+}

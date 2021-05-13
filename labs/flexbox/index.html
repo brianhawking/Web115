@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>A selection of my work!</h1>
+    </header>
+
+    <div class="main-container">
+
+
+
+        <main class="flex-container">
+
+            <div class="card">
+                <img src="images/aog.png" alt="">
+                <div class="text-container">
+                    <h3>Adventures of Gloor</h3>
+                    <p>My wife and I ran a weeklong game camp one summer. My role was to teach them how to make a
+                        mario clone. We spent a few days learning javascript, objects, functions, etc. We used the
+                        JavaScript framework called
+                        Phaser. </p>
+                    <p>We used a free 2D level editor called TILED. Each camper used
+                        this to make two game levels using free level assets through OpenGameArt.org. </p>
+                    <p>They came up with the name <b>Adventures of Gloor</b>.</p>
+
+                    <a href="http://www.brianveitch.com/games/aog" class="button">Play me!</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/extreme-ttt.png" alt="">
+                <div class="text-container">
+                    <h3>Extreme Tic Tac Toe</h3>
+                    <p>Extreme tic-tac-toe (also known as super tic-tac-toe, strategic tic-tac-toe,
+                        or Ultimate tic-tac-toe is a board game composed of nine tic-tac-toe
+                        boards arranged in a 3 × 3 grid. Players take turns playing in the smaller tic-tac-toe
+                        boards until one of them wins in the larger tic-tac-toe board. Compared to traditional
+                        tic-tac-toe, strategy in this game is conceptually more difficult and has proven more
+                        challenging for computers. </p>
+                    <p>Your opponents previous move dictates which board you're allowed to play in.</p>
+                    <a href="http://www.brianveitch.com/games/tictactoe/" class="button">Play me!</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/lights-out.png" alt="">
+                <div class="text-container">
+                    <h3>Lights Out!</h3>
+                    <p>Such a cool game! Your objective is to turn off all the lights. Clicking the light will toggle
+                        the light on or off. BUT... it will also toggle off any adjacent lights. The basic board size is
+                        3x3. I
+                        programmed it to go as high as your screen will let it. </p>
+                    <p>I wanted to find something for my students outside the typical math word problems that deals with
+                        solving
+                        a system of equations. Given any board size, you can set up a large system of equations to
+                        generate a solution
+                        to Lights Out.
+                    </p>
+                    <a href="http://www.brianveitch.com/games/Lights-Out/" class="button">Play me!</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/simplexicon.png" alt="">
+                <div class="text-container">
+                    <h3>Simplex Method App</h3>
+                    <p>
+                        Need to solve a linear programming problem? Finished using the Simplex Method but you're not
+                        getting the right answer? One of the major drawbacks to the Simplex Method is you have to keep
+                        track of a page full of tedious calculations AND choose the correct row operations. When you
+                        first learn this technique it's hard to do both correctly.</p>
+                    <p>
+                        The Simplex Method involves using a sequence of "If/Thens" that lead you to the initial Simplex
+                        Table. This app walks you through the set up and creates the initial table. From there you can
+                        either use the method on your own or have it help you through Hints. Choose the operation and
+                        the app will generate the new table for you. You get to focus solely on practicing and
+                        experimenting.
+                    </p>
+                    <a href="https://apps.apple.com/tt/app/simplex-method/id1496635032" class="button">Read more!</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/rowreduction.png" alt="">
+                <div class="text-container">
+                    <h3>Row Reduction App</h3>
+                    <p>Need to solve a system of equations by row reducing? Finished row reducing but you're not getting
+                        the right answer? One of the major drawbacks to row reduction (Gauss Jordan Elimination) is you
+                        have to keep track of a page full of tedious calculations AND choose the correct row operations.
+                        When you first learn this technique it's hard to do both correctly.
+                    </p>
+                    <p> Row reducing involves using three different elementary row operations. This app allows you to
+                        work through (and choose) the row operations without having to do the actual calculations. You
+                        get to focus solely on practicing and experimenting.</p>
+
+                    <p>This app guides you through the row reducing process from start to finish. </p>
+                    <a href="https://apps.apple.com/tt/app/row-reduction/id1493366757" class="button">Read more!</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/infinite.png" alt="">
+                <div class="text-container">
+                    <h3>Infinite Runners</h3>
+                    <p>I don't play infinite runners very often. The last one I played was Mr. Jump on my iPhone. After
+                        sinking so many hours into that game I thought, "wouldn't it be crazy if you had to control two
+                        infinite runners at the same time running different
+                        randomly generated courses?" In my game you are controlling two "runners" trying to collect
+                        coins and avoiding the walls. One key (up key or top half of mobile screen) controls the top
+                        player. The bottom half (or down key) controls the bottom player. If the walls push you off
+                        screen, your run is over.
+                    </p>
+                    <p>One of the hardest things I remember doing is animating the rotation on the jump.  Since holding down the jump button means you jump higher, I had to figure out how to slow down the rotation so it lands nicely.</p>
+                    <a href="http://www.brianveitch.com/games/infinite/" class="button">Play me!</a>
+                </div>
+            </div>
+
+        </main>
+
+        <aside>
+            <h2>What did I use?</h2>
+            <h3><a href="http://phaser.io/">Phaser</a></h3>
+            <p>I used the Phaser framework for all my web based on games. It's a javascript framework and is probably
+                the
+                best framework I've ever used. They have a fantastic community website full of free tutorials, examples,
+                and documentation.
+            </p>
+            <h3><a href="https://www.mapeditor.org/">TILED</a></h3>
+            <p>Tiled is a free and open source, easy to use, and flexible level editor. Flexible Object Layers. Annotate
+                the level with rectangles, ellipses or polygons. Place, resize and rotate tiles freely.</p>
+
+            <h3><a href="https://opengameart.org/">OpenGameArt.Org</a></h3>
+            <p>Open Game Art is a media repository intended for use with free and open source software game projects,
+                offering open content assets. Its purpose is to allow developers to easily replace programmer art with
+                high-quality, appropriately licensed artwork</p>
+
+            <h3><a href="https://developer.apple.com/xcode/">xCode / Swift</a></h3>
+            <p>Xcode is Apple's integrated development environment for macOS, used to develop software for macOS, iOS,
+                iPadOS, watchOS, and tvOS.</p>
+        </aside>
+
+    </div>
+</body>
+
+</html>
