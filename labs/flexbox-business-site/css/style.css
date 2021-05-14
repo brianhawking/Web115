@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+:root {
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+}
+
+header .company-title {
+  font-family: 'Anton', sans-serif;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+  padding: 10px 20px;
+  border: 1px solid black;
+  text-align: center;
+ 
+}
+
+header nav ul li:hover {
+  border: 1px solid white;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header a button {
+  padding: 10px; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header a button:hover {
+  
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* ===============================================
+HERO SECTION 
+================================================== */
+
+.hero {
+  background: fixed url(../images/remodel.jpg) right / cover, #000;
+  height: 50vh;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  padding: 50px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: 'Anton', sans-serif;
+}
+
+.hero button {
+   padding: 10px; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ===============================================
+Features
+================================================== */
+
+.features {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.feature {
+  padding: 50px;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+.feature:last-child {
+  border-right: none;
+}
+
+/* ===============================================
+Testimonial
+================================================== */
+
+.testimonial {
+  width: 100%;
+  background-color: black;
+  margin: 50px auto;
+ 
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin: 50px;
+}
+
+.testimonial-container img {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+
+.testimonial-container p {
+  font-size: larger;
+}
+
+.testimonial-container .quote-container {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  color: white;
+}
+
+/* ===============================================
+Team Members
+================================================== */
+
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 1000px;
+
+}
+
+.team-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 50px;
+}
+
+.team-member h2 {
+  margin: 10px 0px;
+  font-family: 'Anton';
+}
+
+.team-member img {
+  margin: 10px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.team-container .quote-container {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  color: white;
+}
+
+/* ===============================================
+About us
+================================================== */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0px auto;
+}
+
+.about-us p {
+  margin: 10px;
+}
+
+.about-us h2 {
+  margin: 10px;
+}
+
+/* ===============================================
+Our philopsphy
+================================================= */
+
+.philosophy-container {
+  max-width: 1000px;
+  margin: 20px;
+}
+
+.philosophy-container p {
+  margin: 20px;
+}
+
+
+/* ===============================================
+*  Footer 
+================================================== */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* ===============================================
+Media Queries
+================================================== */
+
+@media (min-width: 721px)  {
+  header nav ul {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 720px) {
+  
+  header {
+    flex-direction: column;
+    display: flex;
+  }
+  
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  
+  header a button {
+    display: none;
+  }
+  
+  .fa-bars {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .features-container {
+    flex-direction: column;
+  }
+  
+  .feature {
+    border: none;
+  }
+  
+  .testimonial-container img {
+    width: 150px;
+  }
+  
+  .team-member {
+    flex-direction: column;
+  }
+}
+
+
