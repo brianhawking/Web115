@@ -13,8 +13,11 @@
 <body>
     <header>
         <h1 class="company-title">Janky</h1>
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
         <nav>
-            <ul id="nav-list">
+            <ul id="nav-list" class="nav">
                 <li><a href="#">Home</a> </li>
                 <li><a href="pages/our-team.html">Our Team</a> </li>
                 <li><a href="pages/philosophy.html">Philosophy </a> </li>
@@ -22,9 +25,9 @@
             </ul>
         </nav>
 
-        <a href=""><button>Schedule a demo</button></a>
-
-        <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        <a href="pages/demo.html"><button>Schedule a demo</button></a>
+        
+        
     </header>
 
     <main class="main-container">
@@ -38,19 +41,19 @@
         <section class="features">
             <div class="features-container">
                 <div class="feature">
-                    <i class="fas fa-hammer"></i>
-                    <h2 class="feature-title">Title goes here</h2>
-                    <p class="feature-description">Description will go here</p>
+                    <i class="fas fa-wrench"></i>
+                    <h2 class="feature-title">Remodeling / Construction</h2>
+                    <p class="feature-description">We love construction and remodeling. It may not be better than when we started, but we sure did something. </p>
                 </div>
                 <div class="feature">
-                    <i class="fas fa-toolbox"></i>
-                    <h2 class="feature-title">Title goes here</h2>
-                    <p class="feature-description">Description will go here</p>
+                    <i class="fas fa-question"></i>
+                    <h2 class="feature-title">Find on YouTube</h2>
+                    <p class="feature-description">If we're watching YouTube on the job, don't worry. We just don't know what we're doing (hence YouTube).</p>
                 </div>
                 <div class="feature">
-                    <i class="fas fa-toolbox"></i>
-                    <h2 class="feature-title">Title goes here</h2>
-                    <p class="feature-description">Description will go here</p>
+                    <i class="fas fa-smile"></i>
+                    <h2 class="feature-title">Apology Cookies</h2>
+                    <p class="feature-description">If you’re not completely satisfied, we offer some homemade chocolate chip cookies as an apology. </p>
                 </div>
             </div>
         </section>
@@ -78,36 +81,8 @@
                 renovations, to commercial buildings. Anything we can’t do, I’m sure we can find on YouTube.
             </p>
 
-            <h2>Our services include</h2>
+           
 
-            <div class="services">
-                <ul>
-                    <li class="w3-padding-small">Woodworking</li>
-                    <li class="w3-padding-small">Kitchen Remodeling</li>
-                    <li class="w3-padding-small">Construction</li>
-                    <li class="w3-padding-small">Babysitting</li>
-                    <li class="w3-padding-small">Tire cleaning</li>
-                    <li class="w3-padding-small">Math tutoring</li>
-                    <li class="w3-padding-small">How to find anything on YouTube</li>
-                    <li class="w3-padding-small">Basements</li>
-                    <li class="w3-padding-small">Watching paint dry</li>
-                    <li class="w3-padding-small">Eating tacos</li>
-                    <li class="w3-padding-small">Roofs</li>
-                    <li class="w3-padding-small">Vacuuming car mats</li>
-                    <li class="w3-padding-small">Rebranding (not to be confused with refinishing or remodeling)</li>
-                    <li class="w3-padding-small">Chocolate Chip Apology Cookies</li>
-                </ul>
-
-
-
-            </div>
-            <p>And we do about half of these quite well!</p>
-
-            <h2>The Janky Promise</h2>
-            <p>
-                All sales are final. If you’re not completely satisfied, we can offer some homemade chocolate chip
-                cookies as an apology. And that’s a promise.
-            </p>
         </section>
     </main>
 
@@ -120,14 +95,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
 
     <script>
+
         function toggleMenu() {
-
-            if (document.getElementById("nav-list").style.display == "none") {
-                document.getElementById("nav-list").style.display = "flex";
-            } else {
-                document.getElementById("nav-list").style.display = "none";
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
             }
-
+            else {
+                x.className = "nav";
+            }
         }
     </script>
 

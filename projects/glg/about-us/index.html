@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html"><img class="logo" src="../images/logo.png" alt=""></a>
+        <nav class="nav-links">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
+                <li class="nav-item"><a href="">Episdoes</a></li>
+                <li class="nav-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item"><a href=""><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+
+        <a href=""><button class="btn header-btn">Support</button></a>
+
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="banner">
+            <div class="banner-container">
+                <h1>The Grounded Learners Guild is the brainchild of three secondary educators who strive to create
+                    inspiring learning opportunities for adults. This podcast gets real about education, authentic
+                    leadership and the transcendent power of a highly functioning team.</h1>
+            </div>
+        </section>
+
+        <h1>The Grounded Learners Guild is:</h1>
+
+        <section class="light-container">
+            <div class="glg-hosts">
+                <img src="../images/emily.png" alt="">
+                <div class="content">
+                    <p>Emily Coklan is the guild’s flinger of idea spaghetti and teacher-minded skeptic. A resume
+                        covering LA/Literature instruction as well as LMC direction prior to settling into the
+                        instructional coaching groove has instilled a love for fast research and the tendency to use too
+                        many words and punctuation marks. Outside the professional realm, Emily is a very tired twin and
+                        dog mom who loves reading, biking, arranging flowers, and pretending her kitchen is a Food
+                        Network show. Follow Emily on Twitter @TechCoachEm</p>
+                </div>
+            </div>
+
+            <div class="glg-hosts">
+                <img src="../images/jenny.png" alt="">
+                <div class="content">
+                    <p>Jenni LaBrie is the Grounded Learners Guild’s “clarified butter”, streamlining and enhancing
+                        every idea the guild cooks up with intentional questioning and thoughtful revision. Jenni’s
+                        trajectory has seen her delivering 13 years of high school Spanish instruction, evolving into a
+                        trailblazer in tech integration and blended learning, and finally planting both feet firmly in
+                        the world of instructional coaching and adult learning. The patience and optimism she has
+                        brought to the guild and her many instructional roles also serve her well as a mom of three
+                        kids.
+                        In whatever spare time remains in LaBrie land, Jenni stays “grounded” by practicing yoga with
+                        regularity, and singing karaoke-style during commutes. Follow Jenni on Twitter @jennilabrie</p>
+                </div>
+            </div>
+
+            <div class="glg-hosts">
+                <img src="../images/casey.png" alt="">
+                <div class="content">
+                    <p>Casey Veitch is “La Capitana” and idea machine that keeps the wheels of the Grounded Learners
+                        Guild turning with fresh content and an ever-present ability to make cogent connections. She
+                        brings a decade of high school English instruction to the collective guild street cred in
+                        addition to an ever growing professional library that she can sometimes even quote verbatim.
+                        When not coaching or dreaming up professional learning notions, Casey is a mom of two boys who
+                        will binge watch anything streamable, probably while making things out of yarn and designing
+                        hilarious swag to Cricut. Follow Casey on Twitter @Cveitcher</p>
+                </div>
+            </div>
+        </section>
+
+        <section></section>
+
+
+        <footer>
+            <p>&copy Grounded Learners Guild 2021</p>
+        </footer>
+    </main>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script>
+        function toggleMenu() {
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+</body>
+
+</html>

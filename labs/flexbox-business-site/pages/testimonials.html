@@ -14,7 +14,7 @@
     <header>
         <h1 class="company-title">Janky</h1>
         <nav>
-            <ul id="nav-list">
+            <ul id="nav-list" class="nav">
                 <li><a href="../index.html">Home</a> </li>
                 <li><a href="our-team.html">Our Team</a> </li>
                 <li><a href="philosophy.html">Philosophy </a> </li>
@@ -22,35 +22,26 @@
             </ul>
         </nav>
 
-        <a href=""><button>Schedule a demo</button></a>
+        <a href="demo.html"><button>Schedule a demo</button></a>
 
-        <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main class="main-container">
         <section class="hero">
             <div class="hero-container">
                 <h1>Check out our reviews. I'm told they are quite telling. </h1>
-                <a href="pages/demo.html" class="btn"><button>Schedule a Demo</button> </a>
+                <a href="demo.html" class="btn"><button>Schedule a Demo</button> </a>
             </div>
         </section>
 
         <section class="testimonial">
             <div class="testimonial-container">
-                <img src="../images/brian-veitch.jpeg" alt="">
+                <img src="../images/person-1.jpeg" alt="">
                 <div class="quote-container">
                     <p class="quote"><i>“I can honestly say I’ve never seen work like theirs before. And their prices are insanely accurate!”
-                    </i></p>
-                    <p>- Lance V.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonial">
-            <div class="testimonial-container">
-                <img src="../images/brian-veitch.jpeg" alt="">
-                <div class="quote-container">
-                    <p class="quote"><i>“What the @$%! is this?!?”
                     </i></p>
                     <p>- Sarah I.</p>
                 </div>
@@ -59,7 +50,18 @@
 
         <section class="testimonial">
             <div class="testimonial-container">
-                <img src="../images/brian-veitch.jpeg" alt="">
+                <img src="../images/person-2.jpeg" alt="">
+                <div class="quote-container">
+                    <p class="quote"><i>“What the @$%! is this?!?”
+                    </i></p>
+                    <p>- Lance V.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="testimonial-container">
+                <img src="../images/person-3.jpeg" alt="">
                 <div class="quote-container">
                     <p class="quote"><i>“Have them start their work in areas that won’t be seen. They get better as the job progresses.”
                     </i></p>
@@ -70,18 +72,18 @@
 
         <section class="testimonial">
             <div class="testimonial-container">
-                <img src="../images/brian-veitch.jpeg" alt="">
+                <img src="../images/person-4.jpeg" alt="">
                 <div class="quote-container">
                     <p class="quote"><i>"You can't go wrong with Janky.  They're fantastic.  They even offered me a discount for this review."
                     </i></p>
-                    <p>- James H.</p>
+                    <p>- Jamie H.</p>
                 </div>
             </div>
         </section>
 
         <section class="testimonial">
             <div class="testimonial-container">
-                <img src="../images/brian-veitch.jpeg" alt="">
+                <img src="../images/person-5.jpeg" alt="">
                 <div class="quote-container">
                     <p class="quote"><i>"I'll make everyone aware of your services."
                     </i></p>
@@ -92,11 +94,11 @@
 
         <section class="testimonial">
             <div class="testimonial-container">
-                <img src="../images/brian-veitch.jpeg" alt="">
+                <img src="../images/person-6.jpeg" alt="">
                 <div class="quote-container">
                     <p class="quote"><i>"I don't know what else to say. I’m speechless.”
                     </i></p>
-                    <p>- Victoria E.</p>
+                    <p>- Victor E.</p>
                 </div>
             </div>
         </section>
@@ -125,14 +127,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
 
     <script>
+
         function toggleMenu() {
-
-            if (document.getElementById("nav-list").style.display == "none") {
-                document.getElementById("nav-list").style.display = "flex";
-            } else {
-                document.getElementById("nav-list").style.display = "none";
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
             }
-
+            else {
+                x.className = "nav";
+            }
         }
     </script>
 

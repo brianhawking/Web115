@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
+        <nav class="nav-links">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="about-us/index.html">About</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
+                <li class="nav-item"><a href="">Episdoes</a></li>
+                <li class="nav-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item"><a href=""><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+
+        <a href=""><button class="btn header-btn">Support</button></a>
+
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="banner">
+            <div class="banner-container">
+                <h1>The podcast that gets real about education, authentic leadership and the transcendent power of a highly functioning team.</h1>
+                <a href=""><button class="btn">Listen now!</button></a>
+            </div>
+        </section>
+
+        <section class="light-container">
+            <div class="most-recent-episodes">
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/game-board.jpg" alt="">
+                        <h2>The games we play</h2>
+                        <p>May 13, 2021</p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="images/game-board.jpg" alt="">
+                        <h2>The games we play</h2>
+                        <p>May 13, 2021</p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="images/game-board.jpg" alt="">
+                        <h2>The games we play</h2>
+                        <p>May 13, 2021</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="dark-container">
+            <div class="glg-hosts">
+                <img src="images/glg-hosts.jpeg" alt="">
+                <div class="content">
+                    <h2>The Grounded Learners Guild is hosted by Casey Veitch, Emily Coklan, and Jenni LaBrie.</h2>
+                    <a href=""><button class="btn">Learn more</button></a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="light-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
+                <li class="nav-item"><a href="">Episdoes</a></li>
+                <li class="nav-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="nav-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item"><a href=""><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy Grounded Learners Guild 2021</p>
+        </footer>
+    </main>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script>
+
+        function toggleMenu() {
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "nav";
+            }
+        }
+    </script>
+</body>
+</html>

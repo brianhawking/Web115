@@ -1,0 +1,287 @@
+:root {
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+}
+
+/* ==============================
+Header
+============================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #146EAD;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+}
+
+header .logo {
+  width: 100px;
+  margin: 10px;
+}
+
+ .nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ ul li {
+  padding: 10px 10px;
+  border: 1px solid #146EAD;
+  list-style-type: none;
+}
+
+ ul li:hover {
+  border: 1px solid white;
+}
+
+ a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu {
+  font-size: 2.5em;
+  color: white;
+  display: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ========================================
+Banner
+========================================*/
+
+.banner {
+  background: fixed url(../images/banner.jpg) center / cover, #000;
+  box-shadow: inset 0 0 500px 500px rgba(0, 0, 0, 0.3);
+  height: 50vh;
+  margin-top: 120px;
+  width: 100%;
+  padding: 20px;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px auto;
+  width: 70%;
+  max-width: 800px;
+}
+
+.banner-container h1 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+}
+
+/* ==================================
+Light, Dark container
+*/ ==================================
+
+.light-container {
+  margin: 50px;
+}
+
+.dark-container {
+  background-color: #146EAD;
+  color: black;
+}
+
+
+.most-recent-episodes {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  width: 30%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px gray;
+  margin: 10px 0px;
+}
+
+.card h2 {
+  margin: 10px 5px;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+.card img {
+  width: 100%;
+  
+}
+
+.glg-hosts {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.glg-hosts img {
+  width: 50%;
+  min-width: 400px;
+  border-radius: 50%;
+}
+
+.glg-hosts .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0px 50px;
+}
+
+.dark-container .glg-hosts .content h2 {
+  color: white;
+}
+
+.light-container > .glg-hosts {
+  align-items: flex-start;
+}
+
+.light-container .glg-hosts .content h2 {
+  color: black;
+}
+
+.light-container .glg-hosts .content p {
+  font-size: 1.25em;
+}
+
+.light-container ul li {
+  border: 1px solid white;
+}
+
+.light-container ul li:hover {
+  border: 1px solid black;
+}
+
+footer {
+  background-color: #146EAD;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+
+@media (max-width: 680px) {
+  
+  .menu {
+    display: block;
+    margin-right: 60px;
+  }
+  
+  .banner-container {
+    width: 95%;
+  }
+  .banner-container h1 {
+    font-size: 1.2em;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .header-btn {
+    display: none;
+  }
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 60%;
+  }
+  
+  .glg-hosts {
+    flex-direction: column;
+  }
+  
+  .glg-hosts img {
+    width: 100%;
+    
+  }
+  
+  .glg-hosts .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .glg-hosts {
+    flex-direction: column;
+   
+  }
+  .glg-hosts img {
+    width: 80%;
+    align-self: center;
+    border-radius: 50%;
+  }
+  
+  .glg-hosts .content {
+    width: 100%;
+  }
+}
+

@@ -14,7 +14,7 @@
     <header>
         <h1 class="company-title">Janky</h1>
         <nav>
-            <ul id="nav-list">
+            <ul id="nav-list" class="nav">
                 <li><a href="../index.html">Home</a> </li>
                 <li><a href="our-team.html">Our Team</a> </li>
                 <li><a href="">Philosophy </a> </li>
@@ -22,16 +22,18 @@
             </ul>
         </nav>
 
-        <a href=""><button>Schedule a demo</button></a>
+        <a href="demo.html"><button>Schedule a demo</button></a>
 
-        <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main class="main-container">
         <section class="hero">
             <div class="hero-container">
                 <h1>Our philosophy!</h1>
-                <a href="pages/demo.html" class="btn"><button>Schedule a Demo</button> </a>
+                <a href="demo.html" class="btn"><button>Schedule a Demo</button> </a>
             </div>
         </section>
 
@@ -60,10 +62,6 @@
                 off point.
             </p>
 
-            <div class="w3-card w3-border w3-border-black w3-third w3-margin w3-right">
-                <img class="w3-right w3-border " style="width:100%;" src="../images/thinker.png"
-                    alt="Image of Einstein">
-            </div>
 
             <p>
                 Why do people buy used cars or shop at secondhand stores? They understand the value of money. The
@@ -122,14 +120,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
 
     <script>
+
         function toggleMenu() {
-
-            if (document.getElementById("nav-list").style.display == "none") {
-                document.getElementById("nav-list").style.display = "flex";
-            } else {
-                document.getElementById("nav-list").style.display = "none";
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
             }
-
+            else {
+                x.className = "nav";
+            }
         }
     </script>
 
