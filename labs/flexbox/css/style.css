@@ -1,11 +1,12 @@
 :root {
-  --background-color: #fffbdf;
+  --background-color: #e7e3d4;
   --text-color: black;
   --header-text-color: white;
-  --header-background-color: #334443;
+  --header-background-color: #2d1e2f;
   --button-text-color: white;
   --button-background-color: #34656d;
   --card-background-color: white;
+  --accent: #3f84e5;
 }
 
 * {
@@ -15,21 +16,30 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  margin: 0px;
+  font-size: 18px;
+}
+
+a {
+  color: var(--accent);
 }
 
 header {
   text-align: center;
   background-color: var(--header-background-color);
   padding: 0px;
-  position: fixed;
-  top:0;
-  left:0;
+  margin: 0px;
   width:100%;
   color: var(--header-text-color);
 }
 
+header h1 {
+  margin: 0px;
+  padding: 20px;
+}
+
 .main-container {
-  margin-top: 6em;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -85,13 +95,18 @@ aside {
   display: block;
   margin: 10px auto;
   text-decoration: none;
-  color: initial;
   border: 1px solid black;
   padding: 5px;
   border-radius: .5em;
   box-shadow: 1px 1px 1px gray;
-  background-color: var(--button-background-color);
+  background-color: var(--accent);
   color: var(--button-text-color);
+}
+
+@media (max-width: 580px) {
+  body {
+    font-size: 26px;
+  }
 }
 
 .button:hover {
