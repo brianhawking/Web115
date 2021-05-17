@@ -31,26 +31,34 @@ header {
 .main-container {
   margin-top: 6em;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
 }
+
 main {
-  width: 75%;
+  flex: 1 1 70%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin: 10px;
+  padding: 10px;
+}
+
+main > * {
+  flex-basis: 100%;
 }
 
 aside {
-  width: 25%;
+  flex: 1 1 25%;
+  min-width: 200px;
 }
 
 .card {
+  flex: 1 1 250px;
   margin: 10px;
   border: 1px solid black;
-  width: 250px;
   box-shadow: 1px 1px 5px gray;
-  flex-grow: 1;
   background-color: var(--card-background-color);
 }
 
