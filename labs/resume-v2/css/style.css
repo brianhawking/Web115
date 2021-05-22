@@ -55,14 +55,13 @@ table {
 
 :root {
 	/* variables */
-	--background-color: #e7e3d4;
-	--profile-background-color: #A72608;
-	--text-color: #2D1E2F;
-	
-	--title-color: #A72608;
-	--profile-title-color: #e7e3d4;
-	--secondary-title-color: #000;
-	--accent: #2d1e2f;
+	--clr-background: #e7e3d4;
+	--clr-profile-background: #A72608;
+	--clr-text: #2D1E2F;
+	--clr-title: #A72608;
+	--clr-profile-title: #e7e3d4;
+	--clr-secondary-title: #000000;
+	--clr-accent: #2d1e2f;
 	
 	--ff-text: 'Lato', sans-serif;
 	--ff-title: 'Anton', sans-serif;
@@ -71,8 +70,8 @@ table {
 body {
 	font-size: 18px;
 	font-family: var(--ff-text);
-	color: var(--text-color);
-	background-color: var(--background-color);
+	color: var(---clr-text);
+	background-color: var(--clr-background);
   line-height: 1.2;
 }
 
@@ -94,8 +93,12 @@ the resume section */
 .aside {
 	flex: 1 0 250px;
 	align-self: stretch;
-	background-color: var(--profile-background-color);
+	background-color: var(--clr-profile-background);
 }
+
+/*======================================
+  Content within aside - Profile info
+======================================*/
 
 .profile {
 	display: flex;
@@ -111,7 +114,7 @@ the resume section */
 .profile img {
 	width: 70%;
 	border-radius: 50%;
-	border: 1px solid var(--accent);
+	border: 1px solid var(--clr-accent);
 }
 
 .profile .profile_title {
@@ -129,8 +132,8 @@ the resume section */
 
 .profile .profile_subtitle {
 	font-size: 22px;
-	background-color: var(--accent);
-	color: var(--background-color);
+	background-color: var(--clr-accent);
+	color: var(--clr-background);
 	padding: 5px;
 	text-align: center;
 	margin: 20px 0px;
@@ -172,7 +175,7 @@ the resume section */
 	margin: 45px 0 30px 0;
 	font-size: 36px;
 	font-family: var(--ff-title);
-	color: var(--title-color);
+	color: var(--clr-title);
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px black;
@@ -188,7 +191,7 @@ the resume section */
 	align-items: center;
 	font-size: 22px;
 	font-weight: bold;
-	color: var(--secondary-title-color);
+	color: var(--clr-secondary-title);
 }
 
 .resume_item_subtitle {

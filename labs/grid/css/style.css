@@ -1,0 +1,239 @@
+:root {
+  --background-color: #e7e3d4;
+  --text-color: black;
+  --header-text-color: white;
+  --header-background-color: #a72608;
+  --button-text-color: white;
+  --button-background-color: #34656d;
+  --card-background-color: white;
+  --accent: #3f84e5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0px;
+  font-size: 18px;
+}
+
+
+header {
+  text-align: center;
+  background-color: black;
+  width:100%;
+  color: white;
+}
+
+header h1 {
+  margin: 0px;
+  padding: 20px;
+}
+
+.main-container {
+  margin: 20px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.box {
+  padding: 20px;
+  background-color: #444444;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 42px;
+}
+
+/*========================================
+  1st Grid Container
+========================================*/
+
+.grid-1 {
+  width: 660px;
+  border: 1px solid gray;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 140px 140px;
+  grid-gap: 10px;
+}
+
+.grid-1 .a,
+.grid-1 .b, 
+.grid-1 .c,
+.grid-1 .d,
+.grid-1 .e,
+.grid-1 .f {
+  padding: 48px 30px;
+}
+
+/* ========================================
+    2nd Grid Container
+========================================*/
+
+.grid-2 {
+  width: 660px;
+  border: 1px solid gray;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 140px 140px;
+  grid-gap: 5px 10px;
+  font-family: sans-serif;
+}
+
+.grid-2 .a,
+.grid-2 .b, 
+.grid-2 .c,
+.grid-2 .d,
+.grid-2 .e,
+.grid-2 .f {
+  padding: 54px 0px;
+  text-align: center;
+}
+
+.grid-2 .e {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.grid-2 .c {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.grid-2 .b {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.grid-2 .d {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.grid-2 .a {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.grid-2 .f {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/* ========================================
+    3rd Grid Container
+========================================*/
+
+.grid-3 {
+  width: 660px;
+  border: 1px solid gray;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'header1 header1 header2 header2'
+    'aside main main main'
+    'footer footer footer footer';
+  grid-gap: 10px;
+}
+
+.grid-3 > * {
+  border-radius: 5px;
+  font-size: 32px;
+}
+
+.grid-3 .a,
+.grid-3 .b, 
+.grid-3 .c,
+.grid-3 .d,
+.grid-3 .e,
+.grid-3 .f {
+  padding: 20px 20px;
+}
+
+.grid-3 .a {grid-area: header1;}
+.grid-3 .b {grid-area: header2;}
+.grid-3 .c {grid-area: aside;}
+.grid-3 .d {grid-area: main;}
+.grid-3 .e {grid-area: footer;}
+
+/* ========================================
+    4th Grid Container
+========================================*/
+
+.grid-4 {
+  width: 660px;
+  border: 1px solid gray;
+  padding: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'empty header header'
+    'sidebar content content'
+    'footer footer footer';
+  grid-gap: 10px;
+}
+
+.grid-4 > * {
+  font-size: 32px;
+  border-radius: 5px;
+}
+
+.grid-4 .box {
+  padding: 10px;
+}
+
+.grid-4 .a {grid-area: empty; }
+.grid-4 .b {grid-area: header; background-color: #8C8C8C;}
+.grid-4 .c {grid-area: sidebar;}
+.grid-4 .d {grid-area: content;}
+.grid-4 .e {grid-area: footer; background-color: #8C8C8C;}
+
+.grid-4 p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ========================================
+    5th Grid Container
+========================================*/
+
+.grid-5 {
+  border: 1px solid gray;
+  width: 660px;
+  padding: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1f 1fr;
+  grid-template-areas:
+    'header header header header header'
+    'sidebar sidebar content content content'
+    'sidebar2 sidebar2 sidebar2 sidebar2 sidebar2'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+}
+
+.grid-5 > * {
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+.grid-5 .box {
+  padding: 10px;
+}
+
+.grid-5 .a {grid-area: header; background-color: #8C8C8C;}
+.grid-5 .b {grid-area: sidebar;}
+.grid-5 .c {grid-area: content;}
+.grid-5 .d {grid-area: sidebar2; background-color: #8C8C8C; color: black;s}
+.grid-5 .e {grid-area: footer; background-color: #8C8C8C;}
+
+.grid-5 p {
+  padding: 0px;
+  margin: 0px;
+}

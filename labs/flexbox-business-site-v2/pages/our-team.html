@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janky - Our Team</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="company-title">Janky</h1>
+        <nav>
+            <ul id="nav-list" class="nav">
+                <li><a href="../index.html">Home</a> </li>
+                <li><a href="#">Our Team</a> </li>
+                <li><a href="philosophy.html">Philosophy </a> </li>
+                <li><a href="testimonials.html">Testimonials</a> </li>
+            </ul>
+        </nav>
+
+        <a href="demo.html"><button>Schedule a demo</button></a>
+
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Come meet our team!</h1>
+                <a href="demo.html" class="btn"><button>Schedule a Demo</button> </a>
+            </div>
+        </section>
+
+        <section class="team">
+
+            <div class="team-member">
+                <img src="../images/brian-veitch.JPG" alt="">
+                <div class="team-member-bio">
+                    <h2>Brian Veitch, Owner and CEO</h2>
+                    <p>Brian’s spent the last 10 years doing odd jobs for friends and family. The payment was usually a
+                        pizza or chocolate chip cookies. It wasn’t until the summer of 2020 did he realize he can make a
+                        career out of it. The most common thing you’ll hear Brian say is “Eh. Good enough.” You may
+                        think that’s a sign of a lack of quality, but he argues that’s why we can keep our prices so
+                        cheap. </p>
+                </div>
+            </div>
+
+
+            <div class="team-member">
+                <img src="../images/chuck-stump.JPG" alt="">
+                <div class="team-member-bio">
+                    <h2>Chuck Stump, CFO and Craftsman</h2>
+                    <p>
+                        Chuck’s been around for awhile. And at the age of 70 he’s still kicking. He loves the
+                        tedious jobs
+                        like cleaning carpets, holding the tools, and pointing out mistakes. He does his best work
+                        when it’s
+                        hidden. For example, he loves to show off his fantastic craftsmanship that, sadly, is in the
+                        back of
+                        a hallway closet. You need to move the jackets and household supplies to eventually see it.
+                        When you
+                        do, though, you’ll be impressed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="../images/adam-stump.JPG" alt="">
+                <div class="team-member-bio">
+                    <h2>Adam Stump, Team Lead and Craftsman</h2>
+                    <p>
+                        Adam loves the job as long as he’s not the one planning it. “Just tell me when to show up
+                        and I’ll
+                        bring the beer… I mean water,” is one of his favorite sayings. He promises he only does that
+                        a few
+                        times and he’ll never operate heavy machinery. Although, that’s usually followed up by a
+                        wink. Don’t
+                        worry though. He claims he just has something in his eye.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Janky Company</p>
+    </footer>
+
+    <script defer src=" https://use.fontawesome.com/releases/v5.0.8/js/solid.js"> </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script>
+        function toggleMenu() {
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

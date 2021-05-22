@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janky - Our Philosophy</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="company-title">Janky</h1>
+        <nav>
+            <ul id="nav-list" class="nav">
+                <li><a href="../index.html">Home</a> </li>
+                <li><a href="our-team.html">Our Team</a> </li>
+                <li><a href="">Philosophy </a> </li>
+                <li><a href="testimonials.html">Testimonials</a> </li>
+            </ul>
+        </nav>
+
+        <a href="demo.html"><button>Schedule a demo</button></a>
+
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Our philosophy!</h1>
+                <a href="demo.html" class="btn"><button>Schedule a Demo</button> </a>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="testimonial-container">
+                <img src="../images/brian-veitch.JPG" alt="">
+                <div class="quote-container">
+                    <p class="quote"><i>“You can have it done right or you can have it done cheap!”</i></p>
+                    <p>- Brian V.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-container">
+            <p>
+                You might think our stance is “have it done right.” That’s what most companies will sell you.
+                They’ll
+                sell you on their “quality.” <b>Not us.</b> We’ll get your dream built… as long as you don’t dream too
+                big.
+                And
+                maybe add some flaws in that dream. For example, small gaps in the roof or cabinet doors that don’t
+                quite close. Even if they end up with large gaps, we’ll supply a water bucket for no charge – minus
+                the
+                delivery fee and overnight international shipping. What other company would do that? Wait, I think I
+                got
+                off point.
+            </p>
+
+
+            <p>
+                Why do people buy used cars or shop at secondhand stores? They understand the value of money. The
+                average person doesn’t have $500+ to spend on a new fancy car with all the unnecessary gadgets
+                like
+                power steering, seatbelts, or front airbags. You buy a new car for $500 just to drive it off the
+                lot
+                and lose 95% of its value? That’s crazy. Why buy a new $85 dress shirt when you can find one
+                secondhand
+                for $3.99? It may not be pretty but it will get the job done. You end up buying used because you
+                know
+                the price is right and the quality is “good enough” just to get by. And that’s our philosophy.
+            </p>
+
+        </section>
+
+        <section class="testimonial">
+            <div class="testimonial-container">
+                <img src="../images/chuck-stump.JPG" alt="">
+                <div class="quote-container">
+                    <p class="quote"><i>“When good enough is just enough.”</i></p>
+                    <p>- Chuck S.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-container">
+            <p>
+                While I was in training my instructors told me I can pass with a C. And even though they also said I
+                could never run my own company or build anything someone would want, here I am running my own
+                company
+                and building stuff some people sort of want.
+            </p>
+            <p>
+                If you want something done and can’t afford the “quality” those other companies offer, then come
+                check
+                us out. It will be cheap, good enough, and most importantly… it will cheap.
+            </p>
+
+            <p>- Brian</p>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Janky Company</p>
+    </footer>
+
+    <script defer src=" https://use.fontawesome.com/releases/v5.0.8/js/solid.js"> </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script>
+
+        function toggleMenu() {
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

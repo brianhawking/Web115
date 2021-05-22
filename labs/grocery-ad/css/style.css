@@ -1,0 +1,214 @@
+:root {
+  --ff-primary: sans-serif;
+  --ff-secondary: cursive;
+  --clr-background: #CBF3F0;
+  --clr-accent: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: gray;
+}
+
+p, h1, h2, h3 {
+  padding: 0px; 
+  margin: 0px;
+}
+
+.wrapper {
+  width: 1250px;
+  padding: 10px;
+  margin: 10px auto;
+  background-image: url(../images/background-2.jpg);
+  box-shadow: 0px 0px 10px black;
+}
+
+/* =============================================
+  Overall Grid Layout
+==============================================*/
+
+.main-container {
+  width: 1230px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px 200px 250px 100px;
+  grid-gap: 10px;
+  position: relative;
+  background-image: url(../images/background-2.jpg);
+}
+  
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-large {
+  grid-row-end: span 2;
+}
+
+/*======================================
+  Logo
+======================================*/
+
+.logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid black;
+}
+
+.logo-image {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 100%;
+  height: 246px;
+
+}
+
+/*======================================
+  Features section
+======================================*/
+
+.hot-deals {
+  grid-column: 2/5;
+  grid-row: 1/3;
+  border: 1px solid black;
+  background-color: var(--clr-accent);
+  display: grid;
+  grid-gap: 0px 10px;
+  grid-template-columns: 445px 445px;
+  grid-template-rows: 60px 330px;
+  padding: 10px;
+}
+
+.hot-deals-phrase {
+  grid-column: 1/3;
+  color: yellow;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+}
+.hot-deals-phrase h2 {
+  margin: 0px;
+  padding: 6px;
+  font-size: 48px;
+}
+
+.hot-deals-phrase h2 .white {
+  color: white;
+}
+
+.hot-deal {
+  position: relative;
+}
+
+
+/*=======================================
+  Description Container layout
+=======================================*/
+
+.item-description  {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: yellow;
+  background-color: rgba(230,230,230,1);
+  color: black;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.item-description > * { 
+  text-align: center;
+}
+
+.item-description .price {
+  flex: 1 1 10%;
+}
+
+/*=========================================
+  The three different circle description containers
+=========================================*/
+
+.large {width: 180px; height: 180px; font-size: 20px; padding: 8px;}
+.medium {width: 160px; height: 160px; font-size: 19px; padding: 5px;}
+.small {width: 150px; height: 150px; font-size: 17px; padding: 5px;}
+
+
+/*=========================================
+  Position of description container
+=========================================*/
+
+.top-left {
+  left: -10px;
+  top: -10px;
+}
+
+.top-right {
+  right: -10px;
+  top: -10px;
+}
+
+.bottom-left {
+  left: -10px;
+  bottom: -10px;
+}
+
+.bottom-right {
+  right: -10px;
+  bottom: -10px;
+}
+
+/*============================================
+  Footer with website and calendar
+============================================*/
+
+.footer {
+  grid-column-end: span 4;
+  background-color: #D73631;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.footer .calendar {
+  display: grid;
+  grid-template-rows: 30px 50px;
+  grid-template-columns: 55px 55px 55px 55px 55px 55px 55px;
+  padding: 10px;
+}
+
+.footer .header {
+  grid-column: span 7;
+  background-color: black;
+  color: white;
+  width: 385px;
+  padding: 8px;
+  margin: 0px auto;
+}
+
+.footer .day {
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+}
+
+.footer .website {
+  margin: 10px;
+}

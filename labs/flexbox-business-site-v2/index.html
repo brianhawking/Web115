@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janky - Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="company-title">Janky</h1>
+        <div class="menu">
+            <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="nav-list" class="nav">
+                <li><a href="#">Home</a> </li>
+                <li><a href="pages/our-team.html">Our Team</a> </li>
+                <li><a href="pages/philosophy.html">Philosophy </a> </li>
+                <li><a href="pages/testimonials.html">Testimonials</a> </li>
+            </ul>
+        </nav>
+
+        <a href="pages/demo.html"><button>Schedule a demo</button></a>
+        
+        
+    </header>
+
+    <main class="main-container">
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Believe it or not this is the finished product.</h1>
+                <a href="pages/demo.html" class="btn"><button>Schedule a Demo</button> </a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features-container">
+                <div class="feature">
+                    <i class="fas fa-wrench"></i>
+                    <h2 class="feature-title">Remodeling / Construction</h2>
+                    <p class="feature-description">We love construction and remodeling. It may not be better than when we started, but we sure did something. </p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-question"></i>
+                    <h2 class="feature-title">Find on YouTube</h2>
+                    <p class="feature-description">If we're watching YouTube on the job, don't worry. We just don't know what we're doing (hence YouTube).</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-smile"></i>
+                    <h2 class="feature-title">Apology Cookies</h2>
+                    <p class="feature-description">If you’re not completely satisfied, we offer some homemade chocolate chip cookies as an apology. </p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="testimonial-container">
+                <img src="images/cathy-s.jpeg" alt="">
+                <div class="quote-container">
+                    <p class="quote"><i>"I guess Janky is the next best thing to someone who doesn’t know what they’re
+                            doing."</i></p>
+                    <p>- Cathy S.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <p>
+                For the last 8 months, Janky Company has performed thousands (maybe millions) of services throughout
+                the Chicagoland area. You don’t have to check our math on that. It’s right. And if not, well we’re
+                not math geniuses.
+            </p>
+
+            <p>
+                We’re a family run, semi-dedicated group of amateurs who want to bring your dream to life (or as
+                close to life as we can get it). We can do anything from simple woodworking, home construction and
+                renovations, to commercial buildings. Anything we can’t do, I’m sure we can find on YouTube.
+            </p>
+
+           
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Janky Company</p>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script>
+
+        function toggleMenu() {
+            console.log("run");
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

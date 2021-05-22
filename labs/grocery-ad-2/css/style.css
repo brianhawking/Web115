@@ -1,0 +1,264 @@
+:root {
+  --ff-primary: sans-serif;
+  --ff-secondary: cursive;
+  --clr-background: #CBF3F0;
+  --clr-accent: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 50px auto;
+  font-family: var(--ff-primary);
+  background-color: black;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo img {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 25%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+}
+
+.main-container {
+  margin: 20px auto;
+  position: relative;
+  background-color: var(--clr-background);
+  border: 1px solid black;
+  padding: 20px;
+  width: 872px;
+}
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 480px 80px 480px 90px;
+  grid-gap: 0px 10px;
+  background-color: var(-clr-background);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.item {
+/*   border: 1px solid black; */
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 1px black;
+}
+
+.secondary-grid {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: 220px 240px;
+  background-color: var(--clr-accent);
+  padding: 10px;
+}
+
+/* =======================================
+  Add border radius to the secondary grid
+=========================================*/
+
+.top-right {
+  border-top-right-radius: 20px;
+}
+
+.top-left {
+  border-top-left-radius: 20px;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 20px;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 20px;
+}
+
+/* ======================================
+  Large Item
+=======================================*/
+
+.item-large {
+ position: relative; 
+}
+
+.item-large-description {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  padding: 40px;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  color: white;
+  width: 190px;
+  height: 180px;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
+}
+
+.item-large-description .price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.item-large-description .base {
+  grid-row: span 2;
+  font-size: 60px;
+  text-align: right;
+}
+
+.item-large-description .numerator {
+  align-self: end;
+  font-size: 26px;
+  text-align: left;
+}
+
+.item-large-description .denominator {
+  align-self: start;
+  text-align: left;
+}
+
+/*==========================================
+  Small Items 
+==========================================*/
+
+.item-small {
+  grid-column: span 3;
+}
+.item-small img {
+  width: 75%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.item-small-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  height: 50%;
+  margin-top: 15px;
+}
+
+.item-small-description > * {
+  text-align: center;
+}
+
+/*===================================
+  Medium Item
+===================================*/
+
+.item-medium {
+  grid-column: span 5;
+}
+
+.item-medium img {
+  width: 60%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.item-medium-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  height: 50%;
+  margin: 30px;
+}
+
+.item-medium-description > * {
+  padding-left: 5px;
+}
+
+
+/* =========================================
+  Call to Action
+==========================================*/
+
+.call-to-action {
+  grid-column: span 4;
+  text-align: center;
+  background-color: var(--clr-background);
+}
+
+.call-to-action h1 {
+  font-size: 42px;
+  padding: 0px;
+  margin: 0px;
+  margin: 5px;
+}
+
+.secondary-text {
+  font-family: var(--ff-secondary);
+  color: red;
+  font-size: 48px;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* ===========================================
+  Footer
+============================================*/
+
+.footer {
+  grid-column: span 4;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  background-color: var(--clr-accent);
+}
+
+.footer .calendar {
+  grid-column: span 3;
+  display: grid;
+  grid-template-rows: 30px 50px;
+  grid-template-columns: 55px 55px 55px 55px 55px 55px 55px;
+}
+
+.footer .header {
+  grid-column: span 7;
+  background-color: black;
+  color: white;
+  width: 385px;
+  padding: 5px;
+  margin: 0px auto;
+}
+
+.footer .day {
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+}
+
+.footer .website {
+  grid-column: 1/2;
+  color: yellow;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+}
+.footer .website h2 {
+  font-size: 32px;
+  margin: 20px 0px;
+}
+
+

@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark-background: black;
+  --clr-light-background: white;
+  --clr-light-text: white;
+  --clr-dark-text: black;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  color: white;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*===================================== 
+  Parent Grid 
+=====================================*/
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-areas: 
+    "header header"
+    "search-bar search-bar"
+    "main-container aside"
+    "footer footer";
+  grid-gap: 10px;
+}
+
+/* ====================================
+  Header 
+====================================*/
+
+.header {
+  display: grid;
+  grid-template-columns: minmax(200px, 300px) 1fr;
+  grid-template-rows: 50px 50x;
+  grid-template-areas: 
+    "logo social-media"
+    "logo nav";
+  background-color: var(--clr-dark-background);
+}
+
+
+.header {
+  grid-area: header;
+}
+.header .logo {
+  grid-area: logo;
+  padding: 20px;
+}
+
+.header .logo img {
+  width: 100%;
+}
+
+.header .social-media {
+  grid-area: social-media;
+}
+
+.header .nav {
+  grid-area: nav;
+}
+
+.header .social-media {
+  text-align: right;
+  margin: 10px;
+}
+
+.header .social-media ul {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.header .social-media ul li {
+  margin: 0px 10px;
+  font-size: 24px;;
+}
+
+.header .nav {
+  text-align: center;
+  padding: 35px 0px 0px 0px;
+}
+
+.header .nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .nav ul li {
+  font-size: 18px;
+}
+
+.header .nav ul li a {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.header .nav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+
+/*===================================== 
+  Search Bar
+=====================================*/
+
+.search {
+  grid-area: search-bar;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.search h1 {
+  color: black;
+}
+
+.search .search-bar {
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search .search-bar button {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+}
+
+.search .search-bar input {
+  border: none;
+  font-size: 20px;
+}
+
+
+
+/*====================================== 
+  Main Content 
+======================================*/
+
+.main-container {
+  grid-area: main-container;
+  background-color: yellow;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: blue;
+}

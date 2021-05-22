@@ -62,7 +62,7 @@ header a button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1em;
   color: var(--light-primary);
   background-color: var(--accent);
   text-shadow: 1px 1px 1px black;

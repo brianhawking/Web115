@@ -2,7 +2,7 @@
   --background-color: #e7e3d4;
   --text-color: black;
   --header-text-color: white;
-  --header-background-color: #2d1e2f;
+  --header-background-color: #a72608;
   --button-text-color: white;
   --button-background-color: #34656d;
   --card-background-color: white;
@@ -24,6 +24,10 @@ a {
   color: var(--accent);
 }
 
+/* =====================================
+  Header Container
+======================================*/
+
 header {
   text-align: center;
   background-color: var(--header-background-color);
@@ -37,6 +41,10 @@ header h1 {
   margin: 0px;
   padding: 20px;
 }
+
+/*=======================================
+  Main Container and section
+=======================================*/
 
 .main-container {
   margin-top: 40px;
@@ -53,23 +61,24 @@ main {
   flex-direction: row;
   justify-content: center;
   padding: 10px;
+  order: 2;
 }
 
 main > * {
   flex-basis: 100%;
 }
 
-aside {
-  flex: 1 1 25%;
-  min-width: 200px;
-}
+/*====================================
+  Card container, layout, and style
+====================================*/
 
 .card {
-  flex: 1 1 250px;
+  flex: 1 1 280px;
   margin: 10px;
   border: 1px solid black;
   box-shadow: 1px 1px 5px gray;
   background-color: var(--card-background-color);
+  max-width: 450px;
 }
 
 .card:hover {
@@ -90,6 +99,17 @@ aside {
   margin: 5px;
   padding: 0px;
 }
+
+/*==================================
+  Aside container 
+==================================*/
+
+aside {
+  flex: 1 1 25%;
+  min-width: 200px;
+  order: 1;
+}
+
 
 .button {
   display: block;
