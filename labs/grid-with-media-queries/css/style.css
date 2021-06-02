@@ -3,8 +3,8 @@
 }
 
 :root {
-  --clr-dark-background: black;
-  --clr-light-background: white;
+  --clr-dark-background: #555555;
+  --clr-light-background: #eeeedd;
   --clr-light-text: white;
   --clr-dark-text: black;
 }
@@ -19,9 +19,11 @@ body {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
 }
+
+
 
 h1 {
   font-size: 1.5em;
@@ -42,13 +44,14 @@ ul {
 
 .parent-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px auto 80px;
   grid-template-areas: 
-    "header header header header"
-    "search search search search"
-    "main main main aside"
-    "footer footer footer footer";
+    "header header header header header header"
+    "search search search search search search"
+    "main main main main aside aside"
+    "footer footer footer footer footer footer";
+  background-color: var(--clr-light-background);
 }
 
 /*=======================================
@@ -57,7 +60,7 @@ ul {
 
 .header {
   grid-area: header;
-  background-color: black;
+  background-color: #333333;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -68,7 +71,6 @@ ul {
 
 .header .logo {
   height: 100%;
-  width: auto;
   text-align: center;
 }
 
@@ -87,6 +89,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  background-color: var(--clr-light-background);
 }
 
 .search h1 {
@@ -97,6 +100,7 @@ ul {
   flex: 30%;
   border: 1px solid gray;
   margin-right: 10px;
+  background-color: white;
 }
 
 .search .search-bar input {
@@ -113,6 +117,7 @@ ul {
   background-color: white;
   border: none;
   width: 10%;
+  cursor: pointer;
 }
 
 /*=======================================
@@ -122,6 +127,7 @@ ul {
 .main {
   grid-area: main;
   margin: 0px 10px;
+  background-color: var(--clr-light-background);
 }
 
 .article {
@@ -136,6 +142,9 @@ ul {
   border: 1px solid black;
   margin: 10px 0px; 
   box-shadow: 0px 0px 10px black;
+  
+  background-color: white;
+  color: var(--clr-dark-text);
 }
 
 .article .image {
@@ -146,6 +155,8 @@ ul {
   width: 100%;
 }
 
+
+
 .article .article-title {
   grid-area: title;
 }
@@ -155,12 +166,40 @@ ul {
 }
 
 /*=======================================
+  Read More/Less
+=======================================*/
+
+#more-1 {
+  display: none;
+}
+
+#more-2 {
+  display: none;
+}
+
+#more-3 {
+  display: none;
+}
+
+.btn {
+  background-color: var(--clr-dark-background);
+  color: var(--clr-light-text);
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+/*=======================================
   Aside
 =======================================*/
 
 .aside {
   grid-area: aside;
-  background-color: lightgray;
+  background-color: var(--clr-dark-background);
+  color: var(--clr-light-text);
+  padding: 10px;
+  margin: 10px 0px;
+  margin-right: 10px;
 }
 
 
@@ -173,36 +212,60 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333333;
+  color: white;
 }
 
 
-@media (max-width: 840px) {
+@media (max-width: 1200px) {
   
   .parent-grid {
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px auto 80px;
     grid-template-areas: 
-      "header header"
-      "search search"
-      "main aside"
-      "footer footer";
+      "header header header header header header"
+      "search search search search search search"
+      "main main main aside aside aside"
+      "footer footer footer footer footer footer";
     
   }
   .article {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
       "img"
       "title"
       "content";
   }
   
-  .article .image {  
-    overflow: hidden;
-  }
   .article .article-title {
     text-align: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .parent-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 100px auto auto 80px;
+      grid-template-areas: 
+        "header"
+        "search"
+        "aside"
+        "main"
+        "footer";
+  }
+  
+  .logo img {
+    width: 200px;
+  }
+  
+  .search {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .aside {
+    margin: 10px;
   }
 }
 
