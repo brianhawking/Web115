@@ -95,6 +95,8 @@ p, h1, h2, h3, h4, h5 {
 
 .item-large {
  position: relative; 
+ border-left: 1px solid black;
+ border-top: 1px solid black;
 }
 
 .item-large-description {
@@ -109,7 +111,7 @@ p, h1, h2, h3, h4, h5 {
   height: 180px;
   text-align: center;
   text-shadow: 1px 1px 1px black;
-  box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 2px black;
 }
 
 .item-large-description .price {
@@ -171,10 +173,10 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .item-medium img {
-  width: 60%;
+  width: 55%;
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: 20%;
 }
 
 .item-medium-description {

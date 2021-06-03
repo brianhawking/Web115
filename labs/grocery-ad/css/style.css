@@ -45,6 +45,7 @@ p, h1, h2, h3 {
 .item {
   position: relative;
   overflow: hidden;
+  border: 1px solid black;
 }
 
 .item-large {
@@ -66,7 +67,6 @@ p, h1, h2, h3 {
   position: absolute;
   top: 0px;
   right: 0px;
-  border: 1px solid black;
 }
 
 .logo-image {
@@ -184,6 +184,7 @@ p, h1, h2, h3 {
   display: flex;
   justify-content: space-around;
   font-size: 18px;
+  border: 1px solid black;
 }
 
 .footer .calendar {

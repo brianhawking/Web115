@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janky's Bar and Grill - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Six+Caps&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title-and-menu">
+            <h1>Janky's</h1>
+            <div class="menu">
+                <i onclick="toggleMenu()" id="menu" class="fas fa-bars"></i>
+            </div>
+        </div>
+        
+        <nav>
+            <ul id="nav-list" class="nav-list">
+                <li class="nav-item"><a href="#">HOME</a></li>
+                <li class="nav-item"><a href="pages/menu.html">MENU</a></li>
+                <li class="nav-item"><a href="pages/hours-location.html">HOURS/LOCATION</a></li>
+                <li class="nav-item"><a href="pages/reservations.html">RESERVATIONS</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section class="hero">
+        <img src="images/janky-logo.png" alt="Janky Logo">
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <figure>
+                <img src="images/group-table.jpg" alt="pic of phone">
+                <figcaption class="caption-overlay"> 
+                    <h2>Order Online</h2>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="images/party.jpg" alt="pic of phone">
+                <figcaption class="caption-overlay"> 
+                    <h2>Host a Party</h2>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="images/gift-card.png" alt="pic of phone">
+                <figcaption class="caption-overlay"> 
+                    <h2>Gift Cards</h2>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="main-content light">
+        <p>Lorem ipsum dolor sit amet,  provident ullam itaque distinctio exercitationem quidem maxime deserunt obcaecati ipsam officiis debitis sapiente eveniet. Unde quis cumque corrupti nisi quidem alias voluptas minus voluptatum vero odit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit saepe porro quidem sapiente! Voluptates aliquid enim ratione! Rerum animi magni voluptates nam fuga quam eveniet maiores mollitia illo rem.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Janky's Bar and Grill</p>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+    <script>
+
+        function toggleMenu() {
+            var x = document.getElementById("nav-list");
+            if (x.className == "nav-list") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "nav-list";
+            }
+        }
+    </script>
+
+</body>
+</html>
