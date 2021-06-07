@@ -39,8 +39,7 @@ ol, ul {
 Custom Styles
 ========================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Six+Caps&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Six+Caps&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -129,7 +128,7 @@ Hero section
 ================================================= */
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/group-table.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/group-table.jpg);
   background-position: right;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -164,6 +163,11 @@ Hero section
 
 .hero-hours-location {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hours-location.jpg);
+  background-position: center;
+}
+
+.hero-reservations {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/reservations.jpg);
   background-position: center;
 }
 
@@ -284,6 +288,7 @@ Main Content
 
 .main-content p {
   margin: 10px;
+  line-height: 1.2;
   font-size: 1em;
 }
 
@@ -323,6 +328,78 @@ Hours and Location Content
   font-weight: bolder;
   width: 100%;
   text-transform: uppercase;
+}
+
+/* =================================================
+Reservations
+================================================= */
+
+.page-title {
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.page-title h2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.reservation-form {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "party-size date time"
+    ". submit .";
+  grid-gap: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.reservation-form .party-size {
+  grid-area: party-size;
+}
+
+.reservation-form .party-size select {
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.reservation-form .date {
+  grid-area: date;
+}
+
+.reservation-form .time {
+  grid-area: time;
+}
+
+.form-element {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.reservation-form .submit {
+  grid-area: submit;
+  text-align: center;
+}
+
+input[type=button] {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label h3 {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 /* =================================================
@@ -398,6 +475,21 @@ Media Queries
   
   .map-hours .map {
     height: 300px;
+  }
+  
+  .reservation-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "party-size"
+      "date"
+      "time"
+      "submit";
+    padding: 20px;
+    grid-gap: 20px;
+  }
+  
+  .reservation-form .form-element {
+    
   }
 }
 
