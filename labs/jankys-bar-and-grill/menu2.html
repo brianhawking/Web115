@@ -41,8 +41,9 @@
         <h2>APPETIZERS</h2>
 
         <div class="left-column">
-            <div class="menu-item">
-                <h3 class="item-name">Wings <a onclick="popup('group-table.jpg')"><i class="fas fa-images"></i></a></h3>
+            <div class="menu-item with-image">
+                <a class="item-image" onclick="popup('wings.jpg')"><img src="images/wings.jpg" alt=""></a>
+                <h3 class="item-name">Wings</h3>
                 <div class="item-price">13.95</div>
                 <div class="item-description">
                     <p>6 wings with your choice of buffalo, honey, siraracha, or garlic served with carrots and celery,
@@ -61,7 +62,8 @@
         </div>
 
         <div class="right-column">
-            <div class="menu-item">
+            <div class="menu-item with-image">
+                <a class="item-image" onclick="popup('wings.jpg')"><img src="images/wings.jpg" alt=""></a>
                 <h3 class="item-name">Potato Skins</h3>
                 <div class="item-price">9.95</div>
                 <div class="item-description">
@@ -70,7 +72,8 @@
                 </div>
             </div>
 
-            <div class="menu-item">
+            <div class="menu-item with-image">
+                <a class="item-image" onmouseover="popup('wings.jpg')"><img src="images/wings.jpg" alt=""></a>
                 <h3 class="item-name">Mediterranean Shrimp</h3>
                 <div class="item-price">9.95</div>
                 <div class="item-description">
@@ -89,6 +92,7 @@
 
         <div class="left-column">
             <div class="menu-item">
+                <img class="item-image" src="images/wings.jpg" alt="">
                 <h3 class="item-name">Wings <a onclick="popup('wings.jpg')"><i class="fas fa-images"></i></a></h3>
                 <div class="item-price">13.95</div>
                 <div class="item-description">
@@ -177,7 +181,7 @@
     </footer>
 
     <div id="popup">
-        <div class="overlay">
+        <div class="overlay" onmouseout="closeOverlay()">
             <div class="close"><a href="javascript:void(0)" onclick="closeOverlay()">&times;</a></div>
             <img id="overlay-image" src="images/group-table.jpg" alt="">
         </div>
