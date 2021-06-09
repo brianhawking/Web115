@@ -75,7 +75,6 @@ header {
   color: white;
   display: flex;
   padding: 5px;
-  align-content: center;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -83,7 +82,7 @@ header {
 
 header ul {
   display: flex;
-  align-content: center;
+  justify-content: : center;
   align-items: center;
 }
 
@@ -122,7 +121,7 @@ header a:active {
 header .title-and-menu {
   display: grid;
   grid-template-columns: 1fr;
-  align-content: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -206,17 +205,21 @@ Menu
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "title title"
-    "left right";
-  grid-gap: 10px;
+    "left right";      
+  grid-gap: 10px 5px;
 }
 
-.menu-category h2 {
-  font-size: 1.75em;
-  font-weight: bolder;
+.menu-category .title {
   width: 100%;
   text-align: center;
   grid-area: title;
+}
+
+.menu-category .title h2 {
+  font-size: 1.75em;
+  font-weight: bolder;
   text-transform: uppercase;
+
 }
 
 .left-column {
@@ -230,18 +233,27 @@ Menu
 .menu-item {
   display: grid;
   grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "name price"
-    "description .";
-  margin: 20px 20px 30px 20px;
+    "description description";
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 30px;
   grid-gap: 10px;
 }
 
+.menu-item > * {
+/*   border: 1px solid black; */
+}
+
 .with-image {
-  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-columns: 4fr 4fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "image name price"
     "image description description";
+  box-shadow: 0px 0px 5px gray;
 }
 
 .menu-item .item-image {
@@ -252,6 +264,7 @@ Menu
 
 .item-image img {
   width: 100%;
+/*   box-shadow: 0 0 5px gray; */
 }
 
 .item-name {
@@ -264,6 +277,7 @@ Menu
   grid-area: price;
   font-size: 1.25em;
   font-weight: bolder;
+  text-align: right;
 }
 
 .item-description {
@@ -309,6 +323,7 @@ Menu
 #popup img {
   width: 100%;
   box-shadow: 0px 0px 25px black;
+  border: 2px solid yellow;
 }
 
 #popup a {
@@ -324,7 +339,7 @@ Cards
 .cards {
   display: flex;
   width: 90%;
-  align-content: center;
+  justify-content: center;
   align-items: center;
   margin: 0px auto;
 }
@@ -365,12 +380,19 @@ Main Content
 .main-content {
   width: 90%;
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 30px auto;
   position: relative;
 }
 
+.main-content h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 1em;
+}
+
 .main-content p {
-  margin: 10px;
+  margin: 1em;
   line-height: 1.2;
   font-size: 1em;
 }
@@ -526,6 +548,23 @@ Media Queries
     margin: 20px auto;
     align-items: baseline
   }
+  
+  .menu-category {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "left"
+      "right";
+    grid-gap: 0px;
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  
+  .with-image {
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -553,6 +592,12 @@ Media Queries
       "title"
       "left"
       "right";
+    grid-gap: 0px;
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+    grid-template-columns: 1fr auto;
   }
   
   .cards {
@@ -588,3 +633,25 @@ Media Queries
   }
 }
 
+@media screen and (max-width: 460px) {
+  .with-image {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "image image"
+      "name price"
+      "description description";
+  }
+}
+
+@media screen and (orientation:landscape) {
+  #popup .overlay {
+    height: 75%;
+    width: auto;
+  }
+  
+  #popup img {
+    height: 100%;
+    width: auto;
+  }
+}
