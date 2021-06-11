@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <div class="mainContainer">
+
+        <div class="reset">
+            <button id="reset">Reset</button>
+        </div>
+        <h1 class="title">TicTacToe</h1>
+
+        <div id="gameBoard" class="gameBoard x">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    
+
+        <div class="scoreBox">
+            <div id="player1" class="playerContainer currentPlayer">
+                <h1 class="playerContainer__name">Player X</h1>
+                <h1 class="player1Container__score">0</h1>
+            </div>
+
+            <div id="player2" class="playerContainer">
+                <h1 class="playerContainer__name">Player O</h1>
+                <h1 class="playerContainer__score">0</h1>
+            </div>
+        </div>
+    </div>
+   
+    <div id="overlay" class="overlay">
+        <div class="gameOver">
+            <h1 id="winner">X wins</h1>
+            <button id="restart">Play again?</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

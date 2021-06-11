@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giraffes Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Using Javascript to Swap Photos</h1>
+    </header>
+
+    <main class="main-container">
+        <div class="grid">
+            <div class="gallery">
+                <img class="gallery__image" onclick="swap(this)" src="images/at-camera.jpg" alt="Giraffe staring at camera - Photo by Gary Bendig">
+                <img class="gallery__image" onclick="swap(this)" src="images/family.jpg" alt="Large group of giraffes - Photo by Mariola Grobelska">
+                <img class="gallery__image" onclick="swap(this)" src="images/small-family.jpg" alt="Small group of giraffes - Photo by Rae Wallis">
+                <img class="gallery__image" onclick="swap(this)" src="images/eating.jpg" alt="Giraffe eating - Photo by Slawek K.">
+                <img class="gallery__image" onclick="swap(this)" src="images/mom-baby.jpg" alt="Giraffe walking with baby - Photo by Lisa H.">
+            </div>
+
+            <figure class="featured">
+                <img class="featured__image" id="featured__image" src="images/at-camera.jpg" alt="Giraffe staring at camera - Photo by Gary Bendig" class="gallery__image">
+                <figcaption class="featured__overlay">
+                    <h2 id="featured__caption" class="featured__caption">Giraffe staring at camera - Photo by Gary Bendiga</h2>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <script src="js/swap.js"></script>
+</body>
+</html>

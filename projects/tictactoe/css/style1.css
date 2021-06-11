@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gameBoard-size: 402px;
+}
+
+.mainContainer {
+    margin: 0px auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40px auto auto auto 40px;
+    grid-template-rows: 80px auto auto;
+    grid-template-areas: 
+    ". reset title title title "
+    ". board board board ."
+    "scorebox scorebox scorebox scorebox scorebox";
+    background-color: #1f487e;
+    align-items: center;
+    grid-gap: 20px 0px;
+}
+
+.gameBoard {
+    grid-area: board;
+    width: var(--gameBoard-size);
+    height: var(--gameBoard-size);
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reset {
+    grid-area: reset;
+    width: calc(var(--gameBoard-size) / 3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#reset {
+    width: 50%;
+    height: 50%;
+    background-color: #FFE1EA;
+    color:#1D3461;
+    cursor: pointer;
+}
+
+.title {
+    grid-area: title;
+    color: #F18F01;
+    font-size: 42px;
+}
+
+.playerContainer {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.playerContainer__name {
+    margin-bottom: 10px;
+}
+
+
+
+.currentPlayer {
+    border-bottom: 5px solid #F18F01;
+}
+
+.scoreBox {
+    grid-area: scorebox;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #1D3461;
+    color: #B2DBBF;
+    padding: 20px;
+}
+
+/*=====================================
+ GameBoard
+=====================================*/
+
+.gameBoard.x .box:not(.x):not(.o):hover::after {
+    content: 'X';
+    opacity: 0.35;
+}
+
+.gameBoard.o .box:not(.x):not(.o):hover::after {
+    content: 'O';
+    opacity: 0.35;
+}
+
+
+/*=====================================
+ Boxes
+=====================================*/
+
+.box {
+    width: calc(var(--gameBoard-size) / 3);
+    height: calc(var(--gameBoard-size) / 3);
+    background-color: #1f487e;
+    border: 1px solid white;
+    font-size: calc(var(--gameBoard-size) / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B2DBBF;
+    cursor: pointer;
+}
+
+.box.x::after {
+    content: 'X';
+}
+
+.box.o::after {
+    content: 'O';
+}
+
+.box.x, .box.o {
+    cursor: not-allowed;
+}
+
+
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: 1px solid #1f487e;
+}
+
+.box:first-child,
+.box:nth-child(4),
+.box:nth-child(7) {
+    border-left: 1px solid #1f487e;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: 1px solid #1f487e;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+    border-right: 1px solid #1f487e;
+}
+
+/*=====================================
+ Overlay
+=====================================*/
+
+.overlay {
+    position: absolute;
+    display: none;
+}
