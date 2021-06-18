@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starry Night Resin - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-title">
+      <a href="index.html">
+        <h1 class="site-title__title">
+          Starry <span class="accent">Night</span> Resin
+        </h1>
+      </a>
+      <div id="site-title__menu" class="site-title__menu"><i onclick="toggleMenu()" class="fas fa-bars"></i></div>
+    </div>
+    <nav>
+      <ul id="nav-list" class="nav-list">
+        <li class="nav-list__item"><a href="products.html">Products</a></li>
+        <li class="nav-list__item"><a href="about.html">About</a></li>
+        <li class="nav-list__item"><a href="contact.html">Contact</a></li>
+        <li class="nav-list__item"><a class="cart" href="cart.html">
+            <div class="cart__title">Cart</div>
+            <div class="cart__image"><i class="fas fa-shopping-cart"></i>
+              <div class="cart__image__number">
+                <p>2</p>
+              </div>
+            </div>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-container">
+
+    <h2 class="left">Products</h2>
+    <div class="products-page">
+
+      <aside id="details-desktop" class="filter">
+        <form action="" class="filter-form">
+          <div class="filter__item">
+            <input type="checkbox" id="cutting-boards" name="cutting-boards" value="Cutting Boards">
+            <label for="cutting-boards">Cutting Boards</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="keychains" name="keychains" value="Keychains">
+            <label for="keychains">Keychains / Charms</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="cups-holders" name="cup-holders" value="Cups/Holders">
+            <label for="cups-holders">Cups/Holders</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="mini-jars" name="mini-jars" value="Mini Jars">
+            <label for="mini-jars">Mini Jars</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="coasters" name="coasters" value="Coasters">
+            <label for="coasters">Coasters</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="candle-holders" name="candle-holders" value="Candle Holders">
+            <label for="candle-holders">Candle Holders</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="serving-trays" name="serving-trays" value="serving-trays">
+            <label for="serving-trays">Serving Trays</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="desk-organizer" name="desk-organizer" value="Desk Organizer">
+            <label for="desk-organizer">Desk Organizer</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="touchless-door-opener" name="touchless-door-opener"
+              value="Touchless Door Opener">
+            <label for="touchless-door-opener">Touchless Door Opener</label><br>
+          </div>
+
+          <div class="filter__item">
+            <input type="checkbox" id="decorative-pyramid" name="decorative-pyramid" value="Decorative Pyramid">
+            <label for="decorative-pyramid">Decorative Pyramid</label><br>
+          </div>
+
+        </form>
+      </aside>
+
+      <details id="details-mobile">
+        <summary>Categories</summary>
+        <aside class="filter">
+          <form action="" class="filter-form">
+            <div class="filter__item">
+              <input type="checkbox" id="cutting-boards" name="cutting-boards" value="Cutting Boards">
+              <label for="cutting-boards">Cutting Boards</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="keychains" name="keychains" value="Keychains">
+              <label for="keychains">Keychains / Charms</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="cups-holders" name="cup-holders" value="Cups/Holders">
+              <label for="cups-holders">Cups/Holders</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="mini-jars" name="mini-jars" value="Mini Jars">
+              <label for="mini-jars">Mini Jars</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="coasters" name="coasters" value="Coasters">
+              <label for="coasters">Coasters</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="candle-holders" name="candle-holders" value="Candle Holders">
+              <label for="candle-holders">Candle Holders</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="serving-trays" name="serving-trays" value="serving-trays">
+              <label for="serving-trays">Serving Trays</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="desk-organizer" name="desk-organizer" value="Desk Organizer">
+              <label for="desk-organizer">Desk Organizer</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="touchless-door-opener" name="touchless-door-opener"
+                value="Touchless Door Opener">
+              <label for="touchless-door-opener">Touchless Door Opener</label><br>
+            </div>
+
+            <div class="filter__item">
+              <input type="checkbox" id="decorative-pyramid" name="decorative-pyramid" value="Decorative Pyramid">
+              <label for="decorative-pyramid">Decorative Pyramid</label><br>
+            </div>
+
+          </form>
+        </aside>
+      </details>
+
+
+      <div class="results">
+        <div class="results__filter">
+          <h3>Filter:</h3>
+          <div class="results__filter-item">
+            <p>Keychains/Charms
+              <div class="results__filter-item-cancel">
+                X
+              </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="items">
+          <!--Item -->
+          <div class="item">
+            <img src="images/heart-keychain.png" alt="" class="item__image">
+
+            <h2 class="item__name">Item Name</h2>
+            <h3 class="item__price">$15.00</h3>
+            <p class="item__description">Lorem ipsum dolor quuntur sunt consequatur ipsum veniam nisi perferendis
+              itaque
+              debitis, consectetur dolorem arc.</p>
+            <div class="callToAction">
+              <button class="callToAction__btn">Add to cart</button>
+            </div>
+
+          </div>
+          <!-- END ITEM-->
+
+          <!--Item -->
+          <div class="item">
+            <img src="images/candle-holder.png" alt="" class="item__image">
+
+            <h2 class="item__name">Item Name</h2>
+            <h3 class="item__price">$15.00</h3>
+            <p class="item__description">Lorem ipsum dolor quuntur sunt consequatur ipsum veniam nisi perferendis
+              itaque
+              debitis, consectetur dolorem architecto, adipisci obcaecati deserunt placeat aliquid. Saepe molestias
+              suscipit consequatur.</p>
+            <div class="callToAction">
+              <button class="callToAction__btn">Add to cart</button>
+            </div>
+
+          </div>
+          <!-- END ITEM-->
+
+          <!--Item -->
+          <div class="item">
+            <img src="images/heart-keychain.png" alt="" class="item__image">
+            
+              <h2 class="item__name">Item Name</h2>
+              <h3 class="item__price">$15.00</h3>
+              <p class="item__description">Lorem ipsum dolor quuntur sunt consequatur ipsum veniam nisi perferendis
+                itaque
+                debitis, consectetur dolorem architecto, adipisci obcaecati deserunt placeat aliquid. Saepe molestias
+                suscipit consequatur.</p>
+              <div class="callToAction">
+                <button class="callToAction__btn">Add to cart</button>
+              </div>
+            
+          </div>
+          <!-- END ITEM-->
+
+          <!--Item -->
+          <div class="item">
+            <img src="images/heart-keychain.png" alt="" class="item__image">
+            
+              <h2 class="item__name">Item Name</h2>
+              <h3 class="item__price">$15.00</h3>
+              <p class="item__description">Lorem ipsum dolor quuntur sunt consequatur ipsum veniam nisi perferendis
+                itaque
+                debitis, consectetur dolorem architecto, adipisci obcaecati deserunt placeat aliquid. Saepe molestias
+                suscipit consequatur.</p>
+              <div class="callToAction">
+                <button class="callToAction__btn">Add to cart</button>
+              </div>
+            
+          </div>
+          <!-- END ITEM-->
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="site-footer">
+    <ul class="social-links">
+      <li class="social-links__link"><a href="">Facebook</a></li>
+      <li class="social-links__link"><a href="">Instagram</a></li>
+      <li class="social-links__link"><a href="">Etsy</a></li>
+    </ul>
+
+    <h3 class="site-footer__title">&copy; Starry <span class="accent">Night</span> Resin </h3>
+  </footer>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+
+
+</body>
+
+</html>

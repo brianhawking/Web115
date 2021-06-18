@@ -90,6 +90,7 @@
         // used for responsive menu
         function toggleMenu() {
             var x = document.getElementById("nav-list");
+            console.log("style is " + x.style.display);
             if (x.className == "nav-list") {
                 x.className += " responsive";
             } else {
