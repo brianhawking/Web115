@@ -102,6 +102,10 @@ Header
             border: 1px solid black;
         }
 
+        .active {
+            border-bottom: 1px solid white;
+        }
+
         a:active,
         a:hover {
             border-bottom: 1px solid white;
@@ -127,7 +131,7 @@ Header
             position: absolute;
             top: -10px;
             right: -10px;
-            background-color: green;
+            background-color: #3b70c6;
             border-radius: 50%;
             width: 20px;
             height: 20px;
@@ -174,6 +178,7 @@ Main Content
     p {
         margin: 5px;
         padding: 5px;
+        font-size: 1.2em;
     }
 
     h2 {
@@ -192,7 +197,7 @@ Main Content
     width: 100%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 250px 4fr;
+    grid-template-columns: 230px 4fr;
     grid-template-areas:
         "filter results";
 
@@ -350,12 +355,13 @@ Main Content
         display: flex;
         justify-content: center;
         margin: 20px 0px;
-        font-size: 1.25em;
+        
 
 
         .image-item {
             width: 50%;
             display: flex;
+            
 
             &__image {
                 width: 50%;
@@ -374,12 +380,13 @@ Main Content
     
                 &__name {
                     margin: 5px;
-                    font-size: 1.3em;
+                    font-size: 1.7em;
                     font-weight: bolder;
                 }
     
                 &__price {
                     margin: 10px;
+                    font-size: 1.5em;
                 }
     
                 &__remove {
@@ -396,7 +403,7 @@ Main Content
             margin: 5px;
             
             select {
-                font-size: 1.1em;
+                font-size: 1.4em;
             }
         }
 
@@ -404,6 +411,7 @@ Main Content
             width: 25%;
             margin: 5px;
             text-align: right;
+            font-size: 1.5em;
         }
     }
 
@@ -415,7 +423,7 @@ Main Content
         text-align: right;
         display: grid;
         width: 30%;
-        min-width: 300px;
+        min-width: 400px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "subtotal-header subtotal-value"
@@ -423,7 +431,7 @@ Main Content
             "total-header total-value"
             "checkout checkout";
         grid-gap: 10px;
-        font-size: 1.2em;
+        font-size: 1.5em;
         float: right;
         margin: 20px 0px;
 
@@ -455,8 +463,12 @@ Main Content
             grid-area: checkout;
             width: 100%;
             margin: 0px;
-            
+            font-size: 1em;
 
+            &__btn {
+                width: 100%;
+                max-width: 400px;
+            }
         }
     }
 }
@@ -495,6 +507,10 @@ Main Content
     flex-direction: column;
     margin: 1%;
 
+    p {
+        margin: 0px;
+    }
+
     &:hover {
         box-shadow: 0 0 5px black;
     }
@@ -509,10 +525,12 @@ Main Content
 
     &__title {
         margin: 10px 5px 5px 5px;
+        font-size: 1.5em;
     }
 
     &__price {
         margin: 5px 5px 10px 5px;
+        font-sizE: 1.3em;
     }
 }
 
@@ -525,9 +543,10 @@ Main Content
         max-width: 250px;
         background-color: black;
         color: white;
-        padding: 10px;
+        padding: 5px;
         border-radius: 10px;
         cursor: pointer;
+        font-size: 1.2em;
     }
 }
 
@@ -637,15 +656,11 @@ Media Queries
             // width: 100%;
         }
     }
-
-    // .contact-form {
-    //     width: 90%;
-    // }
 }
 
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
 
     .site-title {
         justify-content: space-between;
@@ -771,7 +786,7 @@ Media Queries
     }
 
     .small-container {
-        width: 80%;
+        width: 90%;
     }
     
     
