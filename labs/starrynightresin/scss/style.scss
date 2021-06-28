@@ -91,6 +91,7 @@ Header
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 
     &__item {
         // padding: 5px;
@@ -98,17 +99,23 @@ Header
         a {
             text-decoration: none;
             color: white;
-            padding: 10px;
+            padding: 0px 5px;
+            height: scale(1);
             border: 1px solid black;
+            transition: height 1s, padding 1s;
         }
 
         .active {
             border-bottom: 1px solid white;
+            padding: 0px 5px 5px 0px;
         }
 
         a:active,
         a:hover {
             border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            padding: 5px 5px;
+            height: scale(1.5);
         }
     }
 }
