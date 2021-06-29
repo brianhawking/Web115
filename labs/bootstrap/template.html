@@ -20,7 +20,7 @@
      <!-- Custom CSS -->
      <link rel="stylesheet" href="css/style.css">
 
-     
+
 
 
 </head>
@@ -67,8 +67,6 @@
           <div class="row mt-5 mb-3">
                <div class="col">
                     <h1>The Shift Cipher</h1>
-                    <p><a href="#shift-cipher-tool">Go straight to the Shift Cipher tool</a></p>
-
                </div>
           </div>
 
@@ -77,99 +75,13 @@
                <div class="col-lg-11">
 
                     <h2>Introduction</h2>
-                    <p>The shift cipher is a type of substitution cipher, specifically a monoalphabetic substitution
-                         cipher. This
-                         means
-                         that you replace a letter in the plaintext with the same letter every time. For example, if you
-                         replace
-                         the letter "A" with "H", you must do that for every "A" in the entire plaintext.
-                         The Caesar cipher is probably the most famous shift cipher. It was used by Julius Caesar to
-                         send messages
-                         to his generals over 2000 years ago.
-                    </p>
-
-                    <p>For a shift cipher, the the shift key is how many letters you shift the plaintext by. The shift
-                         can be
-                         represented by a number or a letter. The number is easier to understand. A key shift of
-                         K=1 means shift every letter to the right 1.
-                         The letter key shift states "what does the letter 'A' encrypt to." K=1 means "A" encrypts
-                         to "B". So K=1 has the key K="B". It may sound more confusing to do this but representing
-                         a key shift as a letter comes in handy with harder shift ciphers and you can make cooler
-                         passwords. The following table
-                         shows how to relate a key shift to a letter.</p>
-
-
-                    <div class="row">
-                         <div class="col"></div>
-
-                         <div class="col">
-
-                              <table class="table table-striped shift-table">
-                                   <thead>
-                                        <tr>
-                                             <th>Number Shift</th>
-                                             <th>Letter Shift </th>
-                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                        <tr>
-                                             <td>0</td>
-                                             <td>A</td>
-                                        </tr>
-                                        <tr>
-                                             <td>1</td>
-                                             <td>B</td>
-                                        </tr>
-                                        <tr>
-                                             <td>2</td>
-                                             <td>C</td>
-                                        </tr>
-                                        <tr>
-                                             <td>3</td>
-                                             <td>D</td>
-                                        </tr>
-                                        <tr>
-                                             <td>4</td>
-                                             <td>E</td>
-                                        </tr>
-                                        <tr>
-                                             <td>...</td>
-                                             <td>...</td>
-                                        </tr>
-                                        <tr>
-                                             <td>25</td>
-                                             <td>Z</td>
-                                        </tr>
-                                   </tbody>
-                              </table>
-                         </div>
-                         <div class="col"></div>
-                    </div>
-
+                    <p>Intro goes here</p>
 
                     <h2>How it works</h2>
-                    <p> Let's talk about the Caesar cipher again. It has a key shift of 3. This means the letter
-                         "A" is
-                         encrypted
-                         3 letters down to "D", "B"
-                         is encrypted to "E", and so on. When you reach the end of the alphabet the shift will wrap
-                         around to
-                         the beginning of the alphabet. For example, "W" encrypts to "Z". "X" ran out of letters,
-                         so it
-                         wraps
-                         over to the beginning of the alphabet at "A". Then "Y" encrypts to "B" and "Z" wraps to
-                         "C".
-                    </p>
-
-                    <p>You can have a shift between 0 and 25. Once you pass a key shift of 25, the alphabet is back
-                         to
-                         "A" -> "A". </p>
-
-                    <p>Check out the demo below how each letter of the plaintext is mapped to its ciphertext. Click
-                         "Shift" to change the key shift.</p>
+                    <p> How it works goes here</p>
 
 
-                    <h2 id="shift-cipher-tool" class="mb-2">Shift Cipher Tool</h2>    
+
                     <div class="card bg-light m-2">
                          <div class="card-body">
                               <h3>Original Alphabet (Plaintext)</h3>
@@ -396,10 +308,10 @@
           <p>&copy; Brian Veitch</p>
      </div>
 
+
      <!-- Custom JS -->
      <script src="js/scripts.js"></script>
      <script src="js/shift.js"></script>
-
 </body>
 
 </html>

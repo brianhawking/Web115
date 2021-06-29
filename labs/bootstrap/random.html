@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <title>The Shift Cipher</title>
+     <title>The Random Cipher</title>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- CSS only -->
@@ -15,12 +15,12 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-     
+
 
      <!-- Custom CSS -->
      <link rel="stylesheet" href="css/style.css">
 
-     
+
 
 
 </head>
@@ -66,8 +66,8 @@
 
           <div class="row mt-5 mb-3">
                <div class="col">
-                    <h1>The Shift Cipher</h1>
-                    <p><a href="#shift-cipher-tool">Go straight to the Shift Cipher tool</a></p>
+                    <h1>The Random Cipher</h1>
+                    <p><a href="#random-cipher-tool">Go straight to the Random Cipher tool</a></p>
 
                </div>
           </div>
@@ -77,99 +77,156 @@
                <div class="col-lg-11">
 
                     <h2>Introduction</h2>
-                    <p>The shift cipher is a type of substitution cipher, specifically a monoalphabetic substitution
-                         cipher. This
-                         means
-                         that you replace a letter in the plaintext with the same letter every time. For example, if you
-                         replace
-                         the letter "A" with "H", you must do that for every "A" in the entire plaintext.
-                         The Caesar cipher is probably the most famous shift cipher. It was used by Julius Caesar to
-                         send messages
-                         to his generals over 2000 years ago.
-                    </p>
+                    <p>The Random cipher is a type of substitution cipher, specifically a monoalphabetic substitution
+                         cipher. This means that you replace a letter in the plaintext with the same letter every time.
+                         For example, if you
+                         replace the letter "A" with "H", you must do that for every "A" in the entire plaintext.</p>
 
-                    <p>For a shift cipher, the the shift key is how many letters you shift the plaintext by. The shift
-                         can be
-                         represented by a number or a letter. The number is easier to understand. A key shift of
-                         K=1 means shift every letter to the right 1.
-                         The letter key shift states "what does the letter 'A' encrypt to." K=1 means "A" encrypts
-                         to "B". So K=1 has the key K="B". It may sound more confusing to do this but representing
-                         a key shift as a letter comes in handy with harder shift ciphers and you can make cooler
-                         passwords. The following table
-                         shows how to relate a key shift to a letter.</p>
+                    <p>The random cipher is a table that maps each letter of the plaintext to a unique letter in the
+                         ciphertext. But there's no rhyme or reason to
+                         what letters map to. Consider the following substitution table. There's no pattern to how the
+                         plaintext maps to the ciphertext. This is why it's called a Random substitution. </p>
+
+                    <h2>Example</h2>
+
+                    <p>Consider the following random substitution table.</p>
+
+                    <div class="card bg-light m-4">
+                         <div class="card-body">
+                              <h3>Original Alphabet (Plaintext)</h3>
+                              <form class='alphabet' align='center'>
+                                   <div class="form-group">
+                                        <input type='text' value='A'>
+                                        <input type='text' value='B'>
+                                        <input type='text' value='C'>
+                                        <input type='text' value='D'>
+                                        <input type='text' value='E'>
+                                        <input type='text' value='F'>
+                                        <input type='text' value='G'>
+                                        <input type='text' value='H'>
+                                        <input type='text' value='I'>
+                                        <input type='text' value='J'>
+                                        <input type='text' value='K'>
+                                        <input type='text' value='L'>
+                                        <input type='text' value='M'>
+                                        <input type='text' value='N'>
+                                        <input type='text' value='O'>
+                                        <input type='text' value='P'>
+                                        <input type='text' value='Q'>
+                                        <input type='text' value='R'>
+                                        <input type='text' value='S'>
+                                        <input type='text' value='T'>
+                                        <input type='text' value='U'>
+                                        <input type='text' value='V'>
+                                        <input type='text' value='W'>
+                                        <input type='text' value='X'>
+                                        <input type='text' value='Y'>
+                                        <input type='text' value='Z'>
+                                   </div>
+                              </form>
 
 
-                    <div class="row">
-                         <div class="col"></div>
+                              <h3>Substitution (Ciphertext)</h3>
 
-                         <div class="col">
+                              <form class="alphabet" align='center'>
+                                   <div class="form-group">
+                                        <input type='text' value='S'>
+                                        <input type='text' value='B'>
+                                        <input type='text' value='X'>
+                                        <input type='text' value='E'>
+                                        <input type='text' value='M'>
+                                        <input type='text' value='U'>
+                                        <input type='text' value='G'>
+                                        <input type='text' value='R'>
+                                        <input type='text' value='C'>
+                                        <input type='text' value='P'>
+                                        <input type='text' value='Z'>
+                                        <input type='text' value='D'>
+                                        <input type='text' value='H'>
+                                        <input type='text' value='L'>
+                                        <input type='text' value='K'>
+                                        <input type='text' value='Y'>
+                                        <input type='text' value='W'>
+                                        <input type='text' value='T'>
+                                        <input type='text' value='V'>
+                                        <input type='text' value='A'>
+                                        <input type='text' value='J'>
+                                        <input type='text' value='I'>
+                                        <input type='text' value='Q'>
+                                        <input type='text' value='O'>
+                                        <input type='text' value='F'>
+                                        <input type='text' value='N'>
 
-                              <table class="table table-striped shift-table">
-                                   <thead>
-                                        <tr>
-                                             <th>Number Shift</th>
-                                             <th>Letter Shift </th>
-                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                        <tr>
-                                             <td>0</td>
-                                             <td>A</td>
-                                        </tr>
-                                        <tr>
-                                             <td>1</td>
-                                             <td>B</td>
-                                        </tr>
-                                        <tr>
-                                             <td>2</td>
-                                             <td>C</td>
-                                        </tr>
-                                        <tr>
-                                             <td>3</td>
-                                             <td>D</td>
-                                        </tr>
-                                        <tr>
-                                             <td>4</td>
-                                             <td>E</td>
-                                        </tr>
-                                        <tr>
-                                             <td>...</td>
-                                             <td>...</td>
-                                        </tr>
-                                        <tr>
-                                             <td>25</td>
-                                             <td>Z</td>
-                                        </tr>
-                                   </tbody>
-                              </table>
+                                   </div>
+
+                              </form>
+
                          </div>
-                         <div class="col"></div>
                     </div>
 
+                    <h3>Encryption</h3>
+                    <p>Based on the table "A" -> "S", "B" -> "B", "C" -> "X", "D" -> "E", "E" -> "M", etc. Let's use
+                         this to encrypt the message "ATTACK AT DAWN." </p>
+                    <table class="table m-4">
+                         <thead>
+                              <tr>
+                                   <th>Encrypting</th>
+                                   <th></th>
+                                   <th></th>
+                              </tr>
+                         </thead>
+                         <tbody>
+                              <tr>
+                                   <td>Plaintext</td>
+                                   <td>ATTACK AT DAWN</td>
+                                   <td></td>
+                              </tr>
+                              <tr>
+                                   <td>Ciphertext</td>
+                                   <td>SAASXZ SA ESQL</td>
+                                   <td></td>
+                              </tr>
 
-                    <h2>How it works</h2>
-                    <p> Let's talk about the Caesar cipher again. It has a key shift of 3. This means the letter
-                         "A" is
-                         encrypted
-                         3 letters down to "D", "B"
-                         is encrypted to "E", and so on. When you reach the end of the alphabet the shift will wrap
-                         around to
-                         the beginning of the alphabet. For example, "W" encrypts to "Z". "X" ran out of letters,
-                         so it
-                         wraps
-                         over to the beginning of the alphabet at "A". Then "Y" encrypts to "B" and "Z" wraps to
-                         "C".
-                    </p>
-
-                    <p>You can have a shift between 0 and 25. Once you pass a key shift of 25, the alphabet is back
-                         to
-                         "A" -> "A". </p>
-
-                    <p>Check out the demo below how each letter of the plaintext is mapped to its ciphertext. Click
-                         "Shift" to change the key shift.</p>
+                         </tbody>
+                    </table>
 
 
-                    <h2 id="shift-cipher-tool" class="mb-2">Shift Cipher Tool</h2>    
+                    <h3>Decryption</h3>
+                    <p>To decrypt we go from the ciphertext back to the plaintext. Based on the table "S" -> "A", "B" ->
+                         "B", "X" -> "C", "E" -> "D", "M" -> "E", etc. Let's use this to decrypt the message "QSCA LKA
+                         FMA" </p>
+                    <table class="table m-4">
+                         <thead>
+                              <tr>
+                                   <th>Decrypting</th>
+                                   <th></th>
+                                   <th></th>
+                              </tr>
+                         </thead>
+                         <tbody>
+                              <tr>
+                                   <td>Ciphertext</td>
+                                   <td>QSCA LKA FMA</td>
+                                   <td></td>
+                              </tr>
+                              <tr>
+                                   <td>Plaintext</td>
+                                   <td>WAIT NOT YET</td>
+                                   <td></td>
+                              </tr>
+
+                         </tbody>
+                    </table>
+
+                    <hr>
+
+                    <div class="row m-3"></div>
+
+                    <h2 id="random-cipher-tool">Random Substitution</h2>
+                    <p>Below is a random substitution generator. When you press "Randomize" it will shuffle the letters
+                         of the alphabet to create a mapping from the plaintext to the ciphertext. You can use this to
+                         encrypt/decrypt messages below the generator.</p>
+
                     <div class="card bg-light m-2">
                          <div class="card-body">
                               <h3>Original Alphabet (Plaintext)</h3>
@@ -240,8 +297,8 @@
 
                               </form>
 
-                              <h4 id='num'>Key Shift of 0 ("A")</h4>
-                              <button type="button" class="btn btn-primary m-1" onclick="shift(1);">Shift</button>
+                              <button type="button" class="btn btn-primary m-1"
+                                   onclick="randomize();">Randomize</button>
 
                          </div>
                     </div>
@@ -250,10 +307,12 @@
 
                          <div class="card-body">
                               <h2>Encrypt your message</h2>
-                              <p>Use the tool above to set your key.</p>
+                              <p>Use the tool above to set your key. When you encrypt you replace with letters in the plaintext table with the corresponding letter in the ciphertext table. </p>
                               <form>
                                    <div class="form-group">
-                                        <label for="plaintext"><h3>Plaintext</h3></label>
+                                        <label for="plaintext">
+                                             <h3>Plaintext</h3>
+                                        </label>
                                         <textarea class="form-control" id="plaintext" rows="6"
                                              placeholder="Enter plaintext here..."></textarea>
                                    </div>
@@ -297,7 +356,9 @@
 
                               <form class="mt-3">
                                    <div class="form-group">
-                                        <label for="ciphertext"><h3>Ciphertext</h3></label>
+                                        <label for="ciphertext">
+                                             <h3>Ciphertext</h3>
+                                        </label>
                                         <textarea class="form-control" id="cipher" rows="6"></textarea>
                                    </div>
                               </form>
@@ -308,17 +369,17 @@
                     </div>
 
                     <h2 class="mt-5">How to decrypt?</h2>
-                    <p>It's easy when you have the shift key. When you encrypt a message you shift all the letters to
-                         the <b>RIGHT</b>. To decrypt, you shift all the letters <b>LEFT.</b>
-                         If the shift key is K=3, then you shift all the letters <b>LEFT</b> by 3 letters.</p>
+                    <p>When you decrypt you replace the letters from the ciphertext table with the corresponding letter from the plaintext table.</p>
 
                     <div class="decrypt-box card m-2">
                          <div class="card-body">
                               <h2>Decrypt your message:</h2>
-                              <p>Use the shift tool from above.</p>
+                              <p>Use the shift tool from above. </p>
                               <form>
                                    <div class="form-group">
-                                        <label for="ciphertext"><h3>Ciphertext</h3></label>
+                                        <label for="ciphertext">
+                                             <h3>Ciphertext</h3>
+                                        </label>
                                         <textarea class="form-control" id="encrypted" rows="6"
                                              placeholder="Enter ciphertext here..."></textarea>
                                    </div>
@@ -327,38 +388,6 @@
                               <br>
                               <button type="button" class="btn btn-primary m-1" onclick="decrypt();">Decrypt!</button>
 
-                              <!-- Auto Decrypt -->
-                              <!-- Button to Open the Modal -->
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="autoDecryptWait();">
-                                   Auto-decrypt
-                              </button>
-
-                              <!-- The Modal -->
-                              <div class="modal" id="myModal">
-                                   <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                             <!-- Modal Header -->
-                                             <div class="modal-header">
-                                                  <h4 class="modal-title">Using all 25 keys</h4>
-                                                  <button type="button" class="close"
-                                                       data-dismiss="modal">&times;</button>
-                                             </div>
-
-                                             <!-- Modal body -->
-                                             <div id="auto-decrypt-body" class="modal-body">
-                                                  
-                                             </div>
-
-                                             <!-- Modal footer -->
-                                             <div class="modal-footer">
-                                                  <button type="button" class="btn btn-danger"
-                                                       data-dismiss="modal">Close</button>
-                                             </div>
-
-                                        </div>
-                                   </div>
-                              </div>
 
                               <div id="decryption-successful" class="m-2" style="display:none">
                                    <div class="alert alert-success alert-dismissible">
@@ -376,7 +405,9 @@
 
                               <form class="mt-3">
                                    <div class="form-group">
-                                        <label for="plaintext"><h3>Plaintext</h3></label>
+                                        <label for="plaintext">
+                                             <h3>Plaintext</h3>
+                                        </label>
                                         <textarea class="form-control" id="decrypted" rows="6"></textarea>
                                    </div>
 
@@ -398,7 +429,7 @@
 
      <!-- Custom JS -->
      <script src="js/scripts.js"></script>
-     <script src="js/shift.js"></script>
+     <script src="js/randomize.js"></script>
 
 </body>
 

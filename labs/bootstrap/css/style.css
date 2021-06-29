@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
 }
@@ -8,7 +12,7 @@ body {
 
 .alphabet input {
   text-align: center;
-  width: 25px;
+  width: 40px;
   margin: .25%;
 }
 
