@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-     <title>The Shift Cipher</title>
+     <title>The Vigenere Cipher</title>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- CSS only -->
@@ -66,9 +66,8 @@
 
           <div class="row mt-5 mb-3">
                <div class="col">
-                    <h1>The Shift Cipher</h1>
-                    <p><a href="#shift-cipher-tool">Go straight to the Shift Cipher tool</a></p>
-
+                    <h1>The Vigenere Cipher</h1>
+                    <a href="#vigenere-cipher-tool">Skip to the Vigenere Cipher Tool</a>
                </div>
           </div>
 
@@ -77,99 +76,40 @@
                <div class="col-lg-11">
 
                     <h2>Introduction</h2>
-                    <p>The shift cipher is a type of substitution cipher, specifically a monoalphabetic substitution
-                         cipher. This
-                         means
-                         that you replace a letter in the plaintext with the same letter every time. For example, if you
-                         replace
-                         the letter "A" with "H", you must do that for every "A" in the entire plaintext.
-                         The Caesar cipher is probably the most famous shift cipher. It was used by Julius Caesar to
-                         send messages
-                         to his generals over 2000 years ago.
+                    <p>The Vigenere cipher is a type of polyalphabetic cipher. Check out the <a
+                              href="random.html">Random Cipher</a>, the <a href="shift.html">Shift Cipher</a>, or the <a
+                              href="keyword.html">Keyword Cipher</a> for examples of a monoalphabetic cipher.
+                         A monoalphabetic cipher is a substitution cipher where the letters in the plaintext will
+                         always encrypt to the same letter. An example would be if "A" always encrypts to "H", "B"
+                         always encrypts to "Z", etc. A
+                         polyalphabetic cipher is one where you use different substitutions throughout the
+                         encryption process. For example, it's very possible that "A" encrypts to "H" and the next
+                         "A" encrypts to "T". The Vigenere is probably the most famous one; however, the Engima
+                         Machine from World War II is another quite famous type of polyalphabetic cipher.
                     </p>
 
-                    <p>For a shift cipher, the the shift key is how many letters you shift the plaintext by. The shift
-                         can be
-                         represented by a number or a letter. The number is easier to understand. A key shift of
-                         K=1 means shift every letter to the right 1.
-                         The letter key shift states "what does the letter 'A' encrypt to." K=1 means "A" encrypts
-                         to "B". So K=1 has the key K="B". It may sound more confusing to do this but representing
-                         a key shift as a letter comes in handy with harder shift ciphers and you can make cooler
-                         passwords. The following table
-                         shows how to relate a key shift to a letter.</p>
-
-
-                    <div class="row">
-                         <div class="col"></div>
-
-                         <div class="col">
-
-                              <table class="table table-striped shift-table">
-                                   <thead>
-                                        <tr>
-                                             <th>Number Shift</th>
-                                             <th>Letter Shift </th>
-                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                        <tr>
-                                             <td>0</td>
-                                             <td>A</td>
-                                        </tr>
-                                        <tr>
-                                             <td>1</td>
-                                             <td>B</td>
-                                        </tr>
-                                        <tr>
-                                             <td>2</td>
-                                             <td>C</td>
-                                        </tr>
-                                        <tr>
-                                             <td>3</td>
-                                             <td>D</td>
-                                        </tr>
-                                        <tr>
-                                             <td>4</td>
-                                             <td>E</td>
-                                        </tr>
-                                        <tr>
-                                             <td>...</td>
-                                             <td>...</td>
-                                        </tr>
-                                        <tr>
-                                             <td>25</td>
-                                             <td>Z</td>
-                                        </tr>
-                                   </tbody>
-                              </table>
-                         </div>
-                         <div class="col"></div>
-                    </div>
-
+                    <p>It's important at this stage that you understand the <a href="shift.html">Shift Cipher</a> in
+                         order to understand the Vigenere cipher. In fact, the Vigenere cipher is basically
+                         a shift cipher, except each letter will use a different shift key.
+                         For example, a shift cipher with a key shift of 4 means every letter in the plaintext is
+                         shifted to the right by 4. This means "A" -> "E", "B" -> "F", etc. And this never changes
+                         throughout the encryption process. The Vigenere cipher could have the first letter of the
+                         plaintext shift by 4, the second letter by 8, the third letter by 6, and so on.</p>
 
                     <h2>How it works</h2>
-                    <p> Let's talk about the Caesar cipher again. It has a key shift of 3. This means the letter
-                         "A" is
-                         encrypted
-                         3 letters down to "D", "B"
-                         is encrypted to "E", and so on. When you reach the end of the alphabet the shift will wrap
-                         around to
-                         the beginning of the alphabet. For example, "W" encrypts to "Z". "X" ran out of letters,
-                         so it
-                         wraps
-                         over to the beginning of the alphabet at "A". Then "Y" encrypts to "B" and "Z" wraps to
-                         "C".
-                    </p>
 
-                    <p>You can have a shift between 0 and 25. Once you pass a key shift of 25, the alphabet is back
-                         to
-                         "A" -> "A". </p>
+                    <h3>Password</h3>
+                    <p>Firs thing you need to do is have a password. It can be a regularly used word, a name, place,
+                         food, or even a random string of letters. In general people will choose something they can
+                         remember. For our
+                         example, I will use the password <b>"WIZARD"</b>.</p>
 
-                    <p>Check out the demo below how each letter of the plaintext is mapped to its ciphertext. Click
-                         "Shift" to change the key shift.</p>
+                    <h3>
+                         Review of Shift Cipher
+                    </h3>
 
-                    <h2>Example</h2>
-
+                    <p>As mentioned before, you will need to understand the <a href="shift.html">Shift Cipher</a>.
+                         Here's a quick recap of the shift cipher:</p>
                     <ul>
                          <li>The shift key in a Shift cipher can be a number 0...25 or a letter A...Z.</li>
                          <li>If you were told the Shift Key = "V", you would convert that to its corresponding number
@@ -247,7 +187,7 @@
 
                                         </form>
 
-                                        <h4>Key Shift of 21 ("V")</h4>
+                                        <h4 id='num'>Key Shift of 21 ("V")</h4>
 
                                    </div>
                               </div>
@@ -276,121 +216,151 @@
 
                     </ul>
 
-    
-                    <h3>Decryption</h3>
-                    <p>To decrypt you just replace every letter in the ciphertext with its corresponding plaintext letter from the encryption table.</p>
+                    <h2>Setting up the Vigenere Cipher</h2>
+                    <p>As you saw above, we placed the shift key below the letters of the plaintext. It was a way to
+                         tell us how to shift the letters. In the shift cipher, the shift is always the same. With the
+                         Vigenere cipher, the shifts change with each letter. Here's how we set it up.</p>
 
-                    <table class="table m-4">
-                         <thead>
-                              <tr>
-                                   <th>Decrypting</th>
-                                   <th></th>
-                                   <th></th>
-                              </tr>
-                         </thead>
-                         <tbody>
-                              <tr>
-                                   <td>Ciphertext</td>
-                                   <td>R V D O &nbsp; I J O &nbsp; T Z O</td>
-                                   <td></td>
-                              </tr>
-                              <tr>
-                                   <td>Plaintext</td>
-                                   <td>W A I T &nbsp; N O T &nbsp; Y E T</td>
-                                   <td></td>
-                              </tr>
+                    <p>Recall our password is <b>WIZARD</b>. Instead of placing "V" below each letter of the plaintext,
+                         we place the letters from <b>WIZARD</b>. Continue writing <b>WIZARD</b> until you reach the end
+                         of the plaintext.</p>
 
-                         </tbody>
+                    <table class="table table-striped">
+                         <tr>
+                              <td>Plaintext:</td>
+                              <td>A T T A C K &nbsp; A T &nbsp; D A W N</td>
+                         </tr>
+                         <tr>
+                              <td>Password: WIZARD</td>
+                              <td>W I Z A R D &nbsp; W I &nbsp; Z A R D</td>
+                         </tr>
                     </table>
 
+                    <h2>Perform the shifts</h2>
+
+                    <ul>
+                         <li>The first letter in the plaintext "A" will use a shift of "W" (22). So "A" -> "W".</li>
+                         <li>The second letter in the plaintext "T" will use a shift of "I" (8). So "T" -> "B".</li>
+                         <li>The third letter in the plaintext "T" will use a shift of "Z" (25). So "T" -> "S".</li>
+                         <li>And so on...</li>
+                    </ul>
+
+                    <p>Notice how the "T"s in ATTACK are encrypted to different letters!</p>
+
+                    <table class="table table-striped">
+                         <tr>
+                              <td>Plaintext:</td>
+                              <td>A T T A C K &nbsp; A T &nbsp; D A W N</td>
+                         </tr>
+                         <tr>
+                              <td>Shift Key: 21 ("V"):</td>
+                              <td>W I Z A R D &nbsp; W I &nbsp; Z A R D</td>
+                         </tr>
+
+                         <tr>
+                              <td>Ciphertext:</td>
+                              <td>W B S A T N &nbsp; W B &nbsp; C A N Q</td>
+                         </tr>
+                    </table>
+
+                    <h2>Is there a quick way to determine each shift?</h2>
+
+                    <p>There certainly is. When I encrypted the above message, I had to keep changing the shift key on
+                         my Shift cipher tool to match the corresponding letter in <b>WIZARD.</b> Instead of that, we
+                         have something called a <b>Vigenere Cipher Table</b>. It allows us to look up the plaintext
+                         letter,
+                         the Shift, and the corresponding ciphertext letter.</p>
+
+
+                    <img class="img-fluid mx-auto d-block" src="images/vigenere-cipher-table.png"
+                         alt="Vigenere Cipher Table">
+
+                    <p>Let's try it with the "W" in ATTACK AT DAWN. "W" has a shift key of "R". Find the "W" in the
+                         plaintext row, find the "R" in the key column, and locate their intersection. </p>
+
+                    <img class="img-fluid mx-auto d-block" src="images/vigenere-cipher-table-W.png"
+                         alt="Vigenere Cipher Table">
+
+
+
+                    <h2>How do we decrypt?</h2>
+
+                    <p>Set up the a table with the ciphertext and password.</p>
+
+                    <table class="table table-striped">
+                         <tr>
+                              <td>Ciphertext:</td>
+                              <td>W B S A T N &nbsp; W B &nbsp; C A N Q</td>
+                         </tr>
+                         <tr>
+                              <td>Shift Key: 21 ("V"):</td>
+                              <td>W I Z A R D &nbsp; W I &nbsp; Z A R D</td>
+                         </tr>
+                    </table>
+
+                    <p>Let's start with the first few letters of the ciphertext "W B S""></p>
+
+                    <ul>
+                         <li>First, find the KEY "W" in the key column. Scroll across until you find the ciphertext
+                              letter "W". Scan to the top of that column to get the corresponding plaintext letter "A".
+
+                              <img class="img-fluid mx-auto d-block" src="images/vigenere-cipher-table-A.png"
+                                   alt="Vigenere Cipher Table">
+
+                         </li>
+
+                         <li>Let's do the next letter in the ciphertext "B". It's corresponding key is "I". Find the KEY
+                              "I" in the key column. Scroll across until you find the ciphertext letter "B". Scan to the
+                              top of that column to get the corresponding plaintext letter "T".</li>
+                         <img class="img-fluid mx-auto d-block" src="images/vigenere-cipher-table-T.png"
+                              alt="Vigenere Cipher Table">
+
+                              <li>Let's do the next letter in the ciphertext "S". It's corresponding key is "Z". Find the KEY
+                                   "Z" in the key column. Scroll across until you find the ciphertext letter "S". Scan to the
+                                   top of that column to get the corresponding plaintext letter "T".</li>
+                              <img class="img-fluid mx-auto d-block" src="images/vigenere-cipher-table-T.png"
+                                   alt="Vigenere Cipher Table">
+
+                    </ul>
+
+                    <p>Continue doing this until you've decrypted the entire ciphertext.</p>
+
+                    <table class="table table-striped">
+                         <tr>
+                              <td>Ciphertext:</td>
+                              <td>W B S A T N &nbsp; W B &nbsp; C A N Q</td>
+                         </tr>
+                         <tr>
+                              <td>Shift Key: 21 ("V"):</td>
+                              <td>W I Z A R D &nbsp; W I &nbsp; Z A R D</td>
+                         </tr>
+
+                         <tr>
+                              <td>Plaintext:</td>
+                              <td>A T T A C K &nbsp; A T &nbsp; D A W N</td>
+                         </tr>
+                    </table>
+
+
+
                     <hr>
+                    <h2 id="vigenere-cipher-tool" class="mt-4 mb-4">The Vigenere Cipher Tool</h2>
 
-                    <h2 id="shift-cipher-tool" class="mb-4 mt-5">Shift Cipher Tool</h2>
-                    <div class="card bg-light m-2">
-                         <div class="card-body">
-                              <h3>Original Alphabet (Plaintext)</h3>
-                              <form class='alphabet' align='center'>
-                                   <div class="form-group">
-                                        <input type='text' value='A'>
-                                        <input type='text' value='B'>
-                                        <input type='text' value='C'>
-                                        <input type='text' value='D'>
-                                        <input type='text' value='E'>
-                                        <input type='text' value='F'>
-                                        <input type='text' value='G'>
-                                        <input type='text' value='H'>
-                                        <input type='text' value='I'>
-                                        <input type='text' value='J'>
-                                        <input type='text' value='K'>
-                                        <input type='text' value='L'>
-                                        <input type='text' value='M'>
-                                        <input type='text' value='N'>
-                                        <input type='text' value='O'>
-                                        <input type='text' value='P'>
-                                        <input type='text' value='Q'>
-                                        <input type='text' value='R'>
-                                        <input type='text' value='S'>
-                                        <input type='text' value='T'>
-                                        <input type='text' value='U'>
-                                        <input type='text' value='V'>
-                                        <input type='text' value='W'>
-                                        <input type='text' value='X'>
-                                        <input type='text' value='Y'>
-                                        <input type='text' value='Z'>
-                                   </div>
-                              </form>
-
-
-                              <h3>Substitution (Ciphertext)</h3>
-
-                              <form class="alphabet" align='center'>
-                                   <div class="form-group">
-                                        <input type='text' value='A' id='_A'>
-                                        <input type='text' value='B' id='_B'>
-                                        <input type='text' value='C' id='_C'>
-                                        <input type='text' value='D' id='_D'>
-                                        <input type='text' value='E' id='_E'>
-                                        <input type='text' value='F' id='_F'>
-                                        <input type='text' value='G' id='_G'>
-                                        <input type='text' value='H' id='_H'>
-                                        <input type='text' value='I' id='_I'>
-                                        <input type='text' value='J' id='_J'>
-                                        <input type='text' value='K' id='_K'>
-                                        <input type='text' value='L' id='_L'>
-                                        <input type='text' value='M' id='_M'>
-                                        <input type='text' value='N' id='_N'>
-                                        <input type='text' value='O' id='_O'>
-                                        <input type='text' value='P' id='_P'>
-                                        <input type='text' value='Q' id='_Q'>
-                                        <input type='text' value='R' id='_R'>
-                                        <input type='text' value='S' id='_S'>
-                                        <input type='text' value='T' id='_T'>
-                                        <input type='text' value='U' id='_U'>
-                                        <input type='text' value='V' id='_V'>
-                                        <input type='text' value='W' id='_W'>
-                                        <input type='text' value='X' id='_X'>
-                                        <input type='text' value='Y' id='_Y'>
-                                        <input type='text' value='Z' id='_Z'>
-
-                                   </div>
-
-                              </form>
-
-                              <h4 id='num'>Key Shift of 0 ("A")</h4>
-                              <button type="button" class="btn btn-primary m-1" onclick="shift(1);">Shift</button>
-
-                         </div>
-                    </div>
+                   
 
                     <div class="encrypt-box card m-2">
 
                          <div class="card-body">
                               <h2>Encrypt your message</h2>
-                              <p>Use the tool above to set your key.</p>
                               <form>
                                    <div class="form-group">
+                                        <label for="keyword"><h4>Keyword:</h4></label>
+                                        <input type="text" class="form-control" id="keyword" name="keyword">
+                                   </div>
+                                   
+                                   <div class="form-group">
                                         <label for="plaintext">
-                                             <h3>Plaintext</h3>
+                                             <h4>Plaintext</h4>
                                         </label>
                                         <textarea class="form-control" id="plaintext" rows="6"
                                              placeholder="Enter plaintext here..."></textarea>
@@ -410,9 +380,6 @@
                               </div>
 
 
-
-
-
                               <button type="button" class="btn btn-primary m-1"
                                    onclick="substitute();">Encrypt!</button>
 
@@ -427,7 +394,7 @@
                               <div id="encryption-failed" class="m-1" style="display:none">
                                    <div class="alert alert-warning alert-dismissible">
                                         <button type="button" class="close" data-hide="alert">&times;</button>
-                                        Something went wrong. Did you leave the message blank?
+                                        Something went wrong. Did you leave the message or keyword blank?
                                    </div>
                               </div>
 
@@ -447,16 +414,15 @@
 
                     </div>
 
-                    <h2 class="mt-5">How to decrypt?</h2>
-                    <p>It's easy when you have the shift key. When you encrypt a message you shift all the letters to
-                         the <b>RIGHT</b>. To decrypt, you shift all the letters <b>LEFT.</b>
-                         If the shift key is K=3, then you shift all the letters <b>LEFT</b> by 3 letters.</p>
-
                     <div class="decrypt-box card m-2">
                          <div class="card-body">
                               <h2>Decrypt your message:</h2>
-                              <p>Use the shift tool from above.</p>
+                              
                               <form>
+                                   <div class="form-group">
+                                        <label for="keyword"><h4>Keyword:</h4></label>
+                                        <input type="text" class="form-control" id="keyword-for-decrypt" name="keyword">
+                                   </div>
                                    <div class="form-group">
                                         <label for="ciphertext">
                                              <h3>Ciphertext</h3>
@@ -469,39 +435,6 @@
                               <br>
                               <button type="button" class="btn btn-primary m-1" onclick="decrypt();">Decrypt!</button>
 
-                              <!-- Auto Decrypt -->
-                              <!-- Button to Open the Modal -->
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"
-                                   onclick="autoDecryptWait();">
-                                   Auto-decrypt
-                              </button>
-
-                              <!-- The Modal -->
-                              <div class="modal" id="myModal">
-                                   <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                             <!-- Modal Header -->
-                                             <div class="modal-header">
-                                                  <h4 class="modal-title">Using all 25 keys</h4>
-                                                  <button type="button" class="close"
-                                                       data-dismiss="modal">&times;</button>
-                                             </div>
-
-                                             <!-- Modal body -->
-                                             <div id="auto-decrypt-body" class="modal-body">
-
-                                             </div>
-
-                                             <!-- Modal footer -->
-                                             <div class="modal-footer">
-                                                  <button type="button" class="btn btn-danger"
-                                                       data-dismiss="modal">Close</button>
-                                             </div>
-
-                                        </div>
-                                   </div>
-                              </div>
 
                               <div id="decryption-successful" class="m-2" style="display:none">
                                    <div class="alert alert-success alert-dismissible">
@@ -541,10 +474,10 @@
           <p>&copy; Brian Veitch</p>
      </div>
 
+
      <!-- Custom JS -->
      <script src="js/scripts.js"></script>
-     <script src="js/shift.js"></script>
-
+     <script src="js/vigenere.js"></script>
 </body>
 
 </html>

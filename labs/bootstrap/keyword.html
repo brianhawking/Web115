@@ -29,7 +29,7 @@
 
      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
           <!-- Brand -->
-          <a class="navbar-brand" href="#">Cracking the Code</a>
+          <a class="navbar-brand" href="index.html">Cracking the Code</a>
 
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -45,18 +45,18 @@
                               Substitution Ciphers
                          </a>
                          <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Random</a>
-                              <a class="dropdown-item" href="#">Shift</a>
-                              <a class="dropdown-item" href="#">Keyword</a>
-                              <a class="dropdown-item" href="#">Vigenere</a>
+                              <a class="dropdown-item" href="random.html">Random</a>
+                              <a class="dropdown-item" href="shift.html">Shift</a>
+                              <a class="dropdown-item" href="keyword.html">Keyword</a>
+                              <a class="dropdown-item" href="vigenere.html">Vigenere</a>
                          </div>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="#">Link</a>
-                    </li>
+                         <a class="nav-link" href="frequency-analysis.html">Frequency Analysis</a>
+                    <!-- </li>
                     <li class="nav-item">
                          <a class="nav-link" href="#">Link</a>
-                    </li>
+                    </li> -->
                </ul>
           </div>
      </nav>
@@ -165,7 +165,7 @@
                          letters.
                     </p>
 
-                    <p>Next step is remove all the letters from the ciphertext. We're going to start with a clean slate.
+                    <p>Next step is remove all the letters from the ciphertext table. We're going to start with a clean slate.
                          It should look like this.</p>
 
                     <div class="card bg-light m-4">
@@ -241,8 +241,8 @@
                          </div>
                     </div>
 
-                    <p>Now we place our keyword in the first empty slots in the cipher text. Suppose our keyword is
-                         WIZARD. It should look like this.
+                    <p>Now we place our keyword in the first empty slots in the ciphertext table. Suppose our keyword is
+                        <b>WIZARD</b>. It should look like this.
                     </p>
 
                     <div class="card bg-light m-4">
@@ -411,6 +411,21 @@
                          </p>
                     </div>
 
+                    <h2>Example</h2>
+
+                    <p>Using the keyword <b>WIZARD</b> we get the following encryption for the message <b>ATTACK AT DAWN</b></p>
+
+                    <table class="table table-striped">
+                         <tr>
+                              <td>Plaintext:</td>
+                              <td>A T T A C K &nbsp; A T &nbsp; D A W N</td>
+                         </tr>
+
+                         <tr>
+                              <td>Ciphertext:</td>
+                              <td>W Q Q W Z G &nbsp; W Q &nbsp; A W U K</td>
+                         </tr>
+                    </table>
 
 
 
@@ -590,40 +605,7 @@
                               <br>
                               <button type="button" class="btn btn-primary m-1" onclick="decrypt();">Decrypt!</button>
 
-                              <!-- Auto Decrypt -->
-                              <!-- Button to Open the Modal -->
-                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"
-                                   onclick="autoDecryptWait();">
-                                   Auto-decrypt
-                              </button>
-
-                              <!-- The Modal -->
-                              <div class="modal" id="myModal">
-                                   <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                             <!-- Modal Header -->
-                                             <div class="modal-header">
-                                                  <h4 class="modal-title">Using all 25 keys</h4>
-                                                  <button type="button" class="close"
-                                                       data-dismiss="modal">&times;</button>
-                                             </div>
-
-                                             <!-- Modal body -->
-                                             <div id="auto-decrypt-body" class="modal-body">
-
-                                             </div>
-
-                                             <!-- Modal footer -->
-                                             <div class="modal-footer">
-                                                  <button type="button" class="btn btn-danger"
-                                                       data-dismiss="modal">Close</button>
-                                             </div>
-
-                                        </div>
-                                   </div>
-                              </div>
-
+                              
                               <div id="decryption-successful" class="m-2" style="display:none">
                                    <div class="alert alert-success alert-dismissible">
                                         <button type="button" class="close" data-hide="alert">&times;</button>

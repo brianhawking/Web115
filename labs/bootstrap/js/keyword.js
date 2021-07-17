@@ -3,7 +3,7 @@ var pressed = false;
 function generate() {
 
      var keyword = document.getElementById("keyword").value.toUpperCase();
-     const regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+     const regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789]/g;
      var result = keyword.replace(regex, '');
 
 

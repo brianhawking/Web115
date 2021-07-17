@@ -29,7 +29,7 @@
 
      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
           <!-- Brand -->
-          <a class="navbar-brand" href="#">Cracking the Code</a>
+          <a class="navbar-brand" href="index.html">Cracking the Code</a>
 
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -45,18 +45,18 @@
                               Substitution Ciphers
                          </a>
                          <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Random</a>
-                              <a class="dropdown-item" href="#">Shift</a>
-                              <a class="dropdown-item" href="#">Keyword</a>
-                              <a class="dropdown-item" href="#">Vigenere</a>
+                              <a class="dropdown-item" href="random.html">Random</a>
+                              <a class="dropdown-item" href="shift.html">Shift</a>
+                              <a class="dropdown-item" href="keyword.html">Keyword</a>
+                              <a class="dropdown-item" href="vigenere.html">Vigenere</a>
                          </div>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="#">Link</a>
+                         <a class="nav-link" href="frequency-analysis.html">Frequency Analysis</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                          <a class="nav-link" href="#">Link</a>
-                    </li>
+                    </li> -->
                </ul>
           </div>
      </nav>
@@ -76,7 +76,9 @@
                <div class="col-lg-1"></div>
                <div class="col-lg-11">
 
+                   
                     <h2>Introduction</h2>
+                    
                     <p>The Random cipher is a type of substitution cipher, specifically a monoalphabetic substitution
                          cipher. This means that you replace a letter in the plaintext with the same letter every time.
                          For example, if you
@@ -87,6 +89,7 @@
                          what letters map to. Consider the following substitution table. There's no pattern to how the
                          plaintext maps to the ciphertext. This is why it's called a Random substitution. </p>
 
+     
                     <h2>Example</h2>
 
                     <p>Consider the following random substitution table.</p>
@@ -178,12 +181,12 @@
                          <tbody>
                               <tr>
                                    <td>Plaintext</td>
-                                   <td>ATTACK AT DAWN</td>
+                                   <td>A T T A C K &nbsp; A T &nbsp; D A W N</td>
                                    <td></td>
                               </tr>
                               <tr>
                                    <td>Ciphertext</td>
-                                   <td>SAASXZ SA ESQL</td>
+                                   <td>S A A S X Z &nbsp; S A &nbsp; E S Q L</td>
                                    <td></td>
                               </tr>
 
@@ -206,12 +209,12 @@
                          <tbody>
                               <tr>
                                    <td>Ciphertext</td>
-                                   <td>QSCA LKA FMA</td>
+                                   <td>Q S C A &nbsp; L K A &nbsp; F M A</td>
                                    <td></td>
                               </tr>
                               <tr>
                                    <td>Plaintext</td>
-                                   <td>WAIT NOT YET</td>
+                                   <td>W A I T &nbsp; N O T &nbsp; Y E T</td>
                                    <td></td>
                               </tr>
 
@@ -222,7 +225,7 @@
 
                     <div class="row m-3"></div>
 
-                    <h2 id="random-cipher-tool">Random Substitution</h2>
+                    <h2 id="random-cipher-tool">Random Substitution Tool</h2>
                     <p>Below is a random substitution generator. When you press "Randomize" it will shuffle the letters
                          of the alphabet to create a mapping from the plaintext to the ciphertext. You can use this to
                          encrypt/decrypt messages below the generator.</p>
