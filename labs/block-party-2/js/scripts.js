@@ -53,11 +53,7 @@ function registerVote() {
 
 }
 
-// display successful registration 
-
-
-
-function registerEvent() {
+function registerForEvent() {
   
   if ( document.getElementById("name").value != "" && (document.getElementById('resident').checked || document.getElementById('non-resident').checked) && document.getElementById("registerForEvent").selectedIndex != 0 ) {
     

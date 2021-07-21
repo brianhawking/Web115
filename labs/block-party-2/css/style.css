@@ -5,11 +5,8 @@
   --clr-text: black;
   --clr-light: white;
   --clr-accent: #FAFF7F;
-  --clr-bg-button: #9EB7E5;
-  --clr-button-text: #295C16;
+  --clr-bg-button: #3579F6;
   --clr-bg-table-header: #CEE6EC;
-  --clr-bg-button: #9EB7E5;
-  --clr-button-text: #16485c;
 }
 
 body {
@@ -24,11 +21,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.btn-fountain {
-  background-color: var(--clr-bg-button);
-  color: var(--clr-button-text);
 }
 
 /* -----------------------------------------
@@ -75,7 +67,7 @@ header .raffle {
 header .raffle a {
   padding: 5px 10px;
   background-color: var(--clr-bg-button);
-  color: var(--clr-button-text);
+  color: var(--clr-light);
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 0px 0px 2px black;
@@ -215,7 +207,7 @@ header .nav-list__item a {
 .event .raffle a {
   padding: 5px 10px;
   background-color: var(--clr-bg-button);
-  color: var(--clr-button-text);
+  color: var(--clr-light);
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 0px 0px 2px black;

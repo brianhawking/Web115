@@ -29,9 +29,8 @@
           <header class="container-fluid p-0 pt-3 header">
 
                <div class="mobile-logo">
-                    <a href="index.html"><img src="images/logo.svg" alt="Picture of Logo"></a>
-                </div>
-      
+                    <img src="images/logo-v10.png" alt="Picture of Logo">
+               </div>
 
                <i onclick="toggleMenu()" id="menu" class="fas fa-bars small-menu"></i>
 
@@ -86,11 +85,12 @@
 
                <nav class="navigation">
                     <ul class="nav-list" id="nav-list">
-                         <li class="nav-list__item nav-list__item-empty mobile-only"><a href="index.html"><img style="width: 150px;" src="images/logo-circle.svg" alt="Picture of Logo"></a></li>
+                         <li class="nav-list__item nav-list__item-empty mobile-only"><img style="width: 150px;"
+                                   src="images/logo-v3.png" alt="Picture of Logo"></li>
                          <li class="nav-list__item"><a href="index.html">Home</a></li>
                          <li class="nav-list__item"><a href="#">Registration</a></li>
-                         <li class="nav-list__item nav-list__item-empty desktop-only"><a href="index.html"><img src="images/logo-circle.svg" alt="Picture of Logo"></a>
-
+                         <li class="nav-list__item nav-list__item-empty desktop-only"><img src="images/logo-v3.png"
+                                   alt="Picture of Logo">
                          </li>
                          <li class="nav-list__item"><a href="schedule.html">Schedule</a></li>
                          <li class="nav-list__item"><a href="charity.html">Charity</a></li>
@@ -132,10 +132,40 @@
 
                <div class="row justify-content-center">
                     <div class="col-6" style="max-width: 600px;">
-
-
-                         <form id="registration">
-
+                         <!-- <form onsubmit="registerVote();return false">
+     
+                              <div class="form-check mb-2">
+                                   <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" id="charity-1" name="charity">ASPCA
+                                   </label>
+                              </div>
+     
+                              <div class="form-check mb-2">
+                                   <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" id="charity-2" name="charity">Kids of
+                                        St. Jude
+                                   </label>
+                              </div>
+     
+                              <div class="form-check mb-2">
+                                   <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" id="charity-3" name="charity">Cancer
+                                        Research Institute
+                                   </label>
+                              </div>
+     
+                              <div class="form-check mb-2">
+                                   <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" id="charity-4" name="charity">Habitat
+                                        for Humanity
+                                   </label>
+                              </div>
+                              <button type="submit" 
+                                   class="btn btn-primary mb-5">Submit</button>
+                         </form> -->
+                         
+                         <form onsubmit="return false">
+     
                               <div class="form-group">
                                    <label for="name">Name:</label>
                                    <input type="text" class="form-control" placeholder="Enter your name" id="name">
@@ -169,12 +199,14 @@
                                         <option value="outdoor movie">Outdoor Movie</option>
                                    </select>
                               </div>
-
-                              <a> <button type="submit" class="btn btn-fountain mb-5">Submit</button></a>
+                              <!-- <button onclick="registerForEvent();" type="submit" 
+                                   class="btn btn-primary mb-5">Submit</button> -->
+                                   <a onclick="registerForEvent()"> <button type="button"
+                                   class="btn btn-primary mb-5">Submit 1</button></a>
                          </form>
+              
 
-
-
+                             
 
                     </div>
                </div>
@@ -202,16 +234,6 @@
      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"></script>
      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
-
-     <script>
-          const form = document.querySelector("#registration");
-          form.addEventListener("submit", handleSubmit);
-
-          function handleSubmit(e) {
-               e.preventDefault();
-               registerEvent();
-          }
-     </script>
 
 
 </body>

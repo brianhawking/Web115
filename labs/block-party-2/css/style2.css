@@ -2,14 +2,6 @@
 :root {
   --ff-text: 'Open Sans', sans-serif;
   --ff-heading: 'Rubik', sans-serif;
-  --clr-text: black;
-  --clr-light: white;
-  --clr-accent: #FAFF7F;
-  --clr-bg-button: #9EB7E5;
-  --clr-button-text: #295C16;
-  --clr-bg-table-header: #CEE6EC;
-  --clr-bg-button: #9EB7E5;
-  --clr-button-text: #16485c;
 }
 
 body {
@@ -17,18 +9,6 @@ body {
   padding: 0;
   font-size: 18px;
   font-family: var(--ff-text);
-}
-
-.flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.btn-fountain {
-  background-color: var(--clr-bg-button);
-  color: var(--clr-button-text);
 }
 
 /* -----------------------------------------
@@ -74,8 +54,8 @@ header .raffle {
 
 header .raffle a {
   padding: 5px 10px;
-  background-color: var(--clr-bg-button);
-  color: var(--clr-button-text);
+  background-color: #3579F6;
+  color: white;
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 0px 0px 2px black;
@@ -114,7 +94,7 @@ header .time__text {
 header .time__remaining {
   background-color: #193A0C;
   padding: 5px;
-  color: var(--clr-accent);
+  color: #FAFF7F;
   border-radius: 5px;
   text-align: center;
   width: 80%;
@@ -136,16 +116,9 @@ header .nav-list {
 }
 
 header .nav-list__item a {
-  color: var(--clr-light);
+  color: white;
   padding: 10px;
   font-family: var(--ff-heading);
-}
-
-/* ------------------------------------------
-     Main
--------------------------------------------*/
-.main {
-  flex-grow: 11;
 }
 
 /* ------------------------------------------
@@ -167,58 +140,12 @@ header .nav-list__item a {
   margin: 10px auto;
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.65);
-  color: var(--clr-accent);
+  color: #ecee97;
   border-radius: 10px;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#charity-vote-success {
-  display: none;
-}
-
-#charity-vote-fail {
-  display: none;
-}
-
-.event {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "time name" "time description" "time registration";
-  grid-gap: 10px;
-}
-
-.event__time {
-  grid-area: time;
-  font-size: 1.25em;
-}
-
-.event__name {
-  grid-area: name;
-  background-color: var(--clr-bg-table-header);
-  padding: 5px;
-  font-weight: bold;
-}
-
-.event__description {
-  grid-area: description;
-  padding: 5px;
-}
-
-.event__registration {
-  padding: 5px;
-  grid-area: registration;
-}
-
-.event .raffle a {
-  padding: 5px 10px;
-  background-color: var(--clr-bg-button);
-  color: var(--clr-button-text);
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 0px 0px 2px black;
 }
 
 /*----------------------------------------------
@@ -329,10 +256,6 @@ footer .copyright {
   .hero__overlay {
     display: none;
   }
-  .event {
-    grid-template-columns: 1fr;
-    grid-template-areas: "time" "name" "description" "registration";
-  }
 }
 
 @media screen and (max-width: 440px) {
@@ -352,4 +275,4 @@ footer .copyright {
     margin-top: 20px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */
