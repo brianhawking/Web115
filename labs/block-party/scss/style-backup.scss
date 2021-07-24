@@ -359,14 +359,6 @@ footer {
           "navigation navigation navigation"
           "time time time";
 
-          // grid-template-columns: 20% 60% 20%;
-          // grid-template-areas: 
-          // ". mobile-logo small-menu"
-          // ". raffle ."
-          // "navigation navigation navigation"
-          // ". time .";
-          // grid-gap: 10px;
-
           &:first-child {
                background-color: #214B11;
           }
@@ -451,27 +443,18 @@ footer {
 
 @media screen and (max-width: 440px) {
      header {
-          grid-template-columns: 20% 60% 20%;
+          grid-template-columns: 70% 30%;
           grid-template-areas: 
-          ". mobile-logo small-menu"
-          ". raffle ."
-          "navigation navigation navigation"
-          ". time .";
-          // "mobile-logo small-menu"
-          // "raffle raffle"
-          // "navigation  navigation"
-          // "time time";
+          "mobile-logo small-menu"
+          "raffle raffle"
+          "navigation  navigation"
+          "time time";
           grid-gap: 10px;
 
           .mobile-logo {
                // display: flex;
                // justify-content: flex-end;
-               text-align: center;
-
-               img {
-                    // max-width: 80%;
-                    width: 150px;
-               }
+               text-align: left;
 
           }
 
@@ -481,7 +464,7 @@ footer {
           }
 
           .time {
-               // margin-top: 20px;
+               margin-top: 20px;
           }
 
      }

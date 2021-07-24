@@ -2,14 +2,13 @@
 :root {
   --ff-text: 'Open Sans', sans-serif;
   --ff-heading: 'Rubik', sans-serif;
-  --clr-text: black;
-  --clr-light: white;
+  --clr-text: #000000;
+  --clr-light: #ffffff;
   --clr-accent: #FAFF7F;
-  --clr-bg-button: #9EB7E5;
-  --clr-button-text: #295C16;
   --clr-bg-table-header: #CEE6EC;
-  --clr-bg-button: #9EB7E5;
-  --clr-button-text: #16485c;
+  --clr-bg-button: #789ee5;
+  --clr-bg-button-hover: #9EB7E5;
+  --clr-button-text: white;
 }
 
 body {
@@ -28,6 +27,11 @@ body {
 
 .btn-fountain {
   background-color: var(--clr-bg-button);
+  color: var(--clr-button-text);
+}
+
+.btn-fountain:hover {
+  background-color: var(--clr-bg-button-hover);
   color: var(--clr-button-text);
 }
 
@@ -76,9 +80,11 @@ header .raffle a {
   padding: 5px 10px;
   background-color: var(--clr-bg-button);
   color: var(--clr-button-text);
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 0px 0px 2px black;
+}
+
+header .raffle a:hover {
+  background-color: var(--clr-bg-button-hover);
+  color: var(--clr-button-text);
 }
 
 header #menu {
@@ -164,6 +170,7 @@ header .nav-list__item a {
 
 .hero__overlay {
   width: 95%;
+  width: max-content;
   margin: 10px auto;
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.65);
@@ -173,6 +180,10 @@ header .nav-list__item a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero__overlay :last-child {
+  margin-bottom: 0px;
 }
 
 #charity-vote-success {
@@ -187,12 +198,13 @@ header .nav-list__item a {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-areas: "time name" "time description" "time registration";
-  grid-gap: 10px;
+  grid-gap: 5px;
+  margin-bottom: 10px;
 }
 
 .event__time {
   grid-area: time;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .event__name {
@@ -204,11 +216,11 @@ header .nav-list__item a {
 
 .event__description {
   grid-area: description;
-  padding: 5px;
+  padding: 0px 5px;
 }
 
 .event__registration {
-  padding: 5px;
+  padding: 0px 5px 20px 5px;
   grid-area: registration;
 }
 
@@ -216,9 +228,11 @@ header .nav-list__item a {
   padding: 5px 10px;
   background-color: var(--clr-bg-button);
   color: var(--clr-button-text);
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 0px 0px 2px black;
+  margin-bottom: 10px;
+}
+
+.event .raffle a:hover {
+  background-color: var(--clr-bg-button-hover);
 }
 
 /*----------------------------------------------
@@ -337,19 +351,18 @@ footer .copyright {
 
 @media screen and (max-width: 440px) {
   header {
-    grid-template-columns: 1fr 50px;
-    grid-template-areas: "mobile-logo small-menu" "raffle raffle" "navigation navigation" "time time";
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: ". mobile-logo small-menu" ". raffle ." "navigation navigation navigation" ". time .";
     grid-gap: 10px;
   }
   header .mobile-logo {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+  }
+  header .mobile-logo img {
+    width: 150px;
   }
   header .small-menu {
     display: block;
-  }
-  header .time {
-    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
