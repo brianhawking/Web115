@@ -358,20 +358,12 @@ footer {
           "mobile-logo raffle small-menu"
           "navigation navigation navigation"
           "time time time";
-
-          // grid-template-columns: 20% 60% 20%;
-          // grid-template-areas: 
-          // ". mobile-logo small-menu"
-          // ". raffle ."
-          // "navigation navigation navigation"
-          // ". time .";
-          // grid-gap: 10px;
+          align-items: start;
 
           &:first-child {
                background-color: #214B11;
           }
-          
-          
+     
 
           #menu {
                // grid-area: menu;
@@ -382,6 +374,7 @@ footer {
 
           .time {
                text-align: center;
+               margin-top: 10px;
 
                &__text {
                     color: white;
@@ -457,31 +450,28 @@ footer {
           ". raffle ."
           "navigation navigation navigation"
           ". time .";
-          // "mobile-logo small-menu"
-          // "raffle raffle"
-          // "navigation  navigation"
-          // "time time";
-          grid-gap: 10px;
+          grid-gap: 10px 0px;
 
           .mobile-logo {
-               // display: flex;
-               // justify-content: flex-end;
                text-align: center;
 
                img {
                     // max-width: 80%;
-                    width: 150px;
+                    width: 180px;
                }
 
           }
 
           .small-menu {
                display: block;
-
           }
 
           .time {
                // margin-top: 20px;
+          }
+
+          .navigation {
+               // margin-bottom: 10px;
           }
 
      }
